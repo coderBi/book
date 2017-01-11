@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn"><head><script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/analytics.js" async=""></script><script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/postmoduletext.js" async=""></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C/C++ 笔试、面试题目大汇总 - fangyukuan - 博客园</title>
+<link type="text/css" rel="stylesheet" href="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/bundle-Cogitation.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/fangyukuan/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/fangyukuan/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/fangyukuan/wlwmanifest.xml">
+<script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/encoder.js" type="text/javascript"></script><script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/gpt.js" type="text/javascript" async=""></script><script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'fangyukuan', cb_enable_mathjax=false;</script>
+<script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/blog-common.js" type="text/javascript"></script>
+<script src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/pubads_impl_57.js" type="text/javascript" async=""></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_002"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_012"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_007"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_003"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_006"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_005"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_004"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_008"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_009"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_010"></script><script type="text/javascript" async="" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/a_011"></script></head>
+<body>
+<a name="top"></a>
+
+<div id="top">
+	
+<div>
+	<table>
+		<tbody><tr>
+			<td class="HeaderTitles">
+				<h1 class="HeaderTitle"><a id="Header1_HeaderTitle" class="HeaderMainTitle" href="http://www.cnblogs.com/fangyukuan/">fangyukuan</a></h1>
+				<p id="tagline">永无止境的追求...追求卓越!!!</p>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div class="HeaderBar">
+	<table id="HeaderBar" class="HeaderBar" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td class="HeaderBarTab" nowrap="nowrap">
+&nbsp;
+<a id="Header1_MyLinks1_HomeLink" href="http://www.cnblogs.com/">博客园</a> ::
+<a id="Header1_MyLinks1_MyHomeLink" href="http://www.cnblogs.com/fangyukuan/">首页</a> ::
+<a href="http://q.cnblogs.com/" class="menu">博问</a> ::
+<a href="http://home.cnblogs.com/ing/" class="menu">闪存</a> ::
+<a id="Header1_MyLinks1_NewPostLink" rel="nofollow" href="http://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> ::
+<a id="Header1_MyLinks1_ContactLink" accesskey="9" rel="nofollow" href="http://space.cnblogs.com/msg/send/fangyukuan">联系</a> ::
+<a id="Header1_MyLinks1_Syndication" href="http://www.cnblogs.com/fangyukuan/rss">订阅</a>
+<a id="Header1_MyLinks1_XMLLink" class="XMLLink" href="http://www.cnblogs.com/fangyukuan/rss"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/xml.gif" alt="订阅"></a> ::
+<a id="Header1_MyLinks1_Admin" rel="nofollow" href="http://i.cnblogs.com/">管理</a> ::
+
+</td>
+			<td><img id="Header1_BlueTab" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/BlueTabRight.gif" align="absmiddle"></td>
+			<td class="HeaderBarTabBack" nowrap="nowrap" width="100%">
+				
+<div class="BlogStatsBar">
+	<table class="BlogStatsBar">
+		<tbody><tr>
+			<td width="100%">
+			</td>
+			<td class="BlogStatsBar" nowrap="nowrap">
+				&nbsp;
+				93 
+				随笔&nbsp;::
+				0 文章
+				::
+				98 评论
+				::
+				0 引用
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+</div>
+<div id="leftmenu">	
+
+	    <div id="blog-calendar" style=""></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+		
+<h3>公告</h3>
+<div class="News">
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/fangyukuan/">fangyukuan</a><br>园龄：<a href="http://home.cnblogs.com/u/fangyukuan/" title="入园时间：2010-03-26">4年11个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/fangyukuan/followers/">167</a><br>关注：<a href="http://home.cnblogs.com/u/fangyukuan/followees/">3</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger('354ffe58-9238-df11-ba8f-001cf0cd104b')">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn">
+<div class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+
+<div id="widget_my_google" class="div_my_zzk"><input name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk" type="text">&nbsp;<input onclick="google_go()" value="谷歌搜索" class="btn_my_zzk" type="button"></div>
+</div>
+
+
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/fangyukuan/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/fangyukuan/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/fangyukuan/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/fangyukuan/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/fangyukuan/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div>
+<h3 class="catListTitle">我的标签</h3>
+<div id="MyTag">
+<ul>
+<li><a href="http://www.cnblogs.com/fangyukuan/tag/%E7%BA%BF%E7%A8%8B/">线程</a>(19)</li><li><a href="http://www.cnblogs.com/fangyukuan/tag/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">内存管理</a>(6)</li><li><a href="http://www.cnblogs.com/fangyukuan/tag/DLL/">DLL</a>(3)</li><li><a href="http://www.cnblogs.com/fangyukuan/tag/%E9%9D%A2%E8%AF%95/">面试</a>(2)</li>
+</ul>
+</div>
+		<h3>随笔分类<span style="font-size:11px;font-weight:normal">(93)</span></h3>
+		
+				<ul>
+			
+				<li><a id="CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/fangyukuan/category/250635.html">Android(9)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/fangyukuan/category/305008.html">Android工程经验(1)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/fangyukuan/category/243354.html">C/C++(7)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/fangyukuan/category/243355.html">C++工程经验(14)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/fangyukuan/category/247067.html">COM/ATL(13)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/fangyukuan/category/300735.html">D3D</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_6" href="http://www.cnblogs.com/fangyukuan/category/298803.html">DDraw(6)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_7" href="http://www.cnblogs.com/fangyukuan/category/378236.html">json(1)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_8" href="http://www.cnblogs.com/fangyukuan/category/341825.html">Mac</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_9" href="http://www.cnblogs.com/fangyukuan/category/262476.html">STL(2)</a> </li>
+			
+				<li><a id="CatList_LinkList_0_Link_10" href="http://www.cnblogs.com/fangyukuan/category/250683.html">Windows(40)</a> </li>
+			
+				</ul>
+			
+	
+		<h3>随笔档案<span style="font-size:11px;font-weight:normal">(93)</span></h3>
+		
+				<ul>
+			
+				<li><a id="CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/fangyukuan/archive/2012/05.html">2012年5月 (1)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/fangyukuan/archive/2012/04.html">2012年4月 (1)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/fangyukuan/archive/2011/08.html">2011年8月 (1)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/fangyukuan/archive/2011/07.html">2011年7月 (1)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/fangyukuan/archive/2011/06.html">2011年6月 (5)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/fangyukuan/archive/2011/05.html">2011年5月 (4)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/fangyukuan/archive/2011/03.html">2011年3月 (2)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/fangyukuan/archive/2010/12.html">2010年12月 (2)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_8" href="http://www.cnblogs.com/fangyukuan/archive/2010/11.html">2010年11月 (2)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_9" href="http://www.cnblogs.com/fangyukuan/archive/2010/09.html">2010年9月 (28)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_10" href="http://www.cnblogs.com/fangyukuan/archive/2010/08.html">2010年8月 (14)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_11" href="http://www.cnblogs.com/fangyukuan/archive/2010/07.html">2010年7月 (1)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_12" href="http://www.cnblogs.com/fangyukuan/archive/2010/06.html">2010年6月 (15)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_13" href="http://www.cnblogs.com/fangyukuan/archive/2010/05.html">2010年5月 (5)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_14" href="http://www.cnblogs.com/fangyukuan/archive/2010/04.html">2010年4月 (10)</a> </li>
+			
+				<li><a id="CatList_LinkList_1_Link_15" href="http://www.cnblogs.com/fangyukuan/archive/2010/03.html">2010年3月 (1)</a> </li>
+			
+				</ul>
+			
+	
+		<h3>其它博客</h3>
+		
+				<ul>
+			
+				<li><a id="CatList_LinkList_2_Link_0" href="http://fangyukuan.blog.163.com/" rel="nofollow" target="_blank">我的163博客</a> </li>
+			
+				<li><a id="CatList_LinkList_2_Link_1" href="http://hi.baidu.com/kuan_kfmmcz" rel="nofollow" target="_blank">我的百度博客</a> </li>
+			
+				</ul>
+			
+	
+		<h3>学习伙伴</h3>
+		
+				<ul>
+			
+				<li><a id="CatList_LinkList_3_Link_0" href="http://blog.csdn.net/linzhengqun" rel="nofollow" target="_blank">colin小屋</a> </li>
+			
+				<li><a id="CatList_LinkList_3_Link_1" href="http://www.cnblogs.com/fangshenghui/" rel="nofollow" target="_blank">fangshenghui</a> </li>
+			
+				</ul>
+			
+	
+		<h3>学习资源</h3>
+		
+				<ul>
+			
+				<li><a id="CatList_LinkList_4_Link_0" href="http://androidappdocs.appspot.com/index.html" rel="nofollow" target="_blank">Android开发</a> </li>
+			
+				</ul>
+			
+	
+<h3>积分与排名</h3>
+<ul>
+	<li>
+		积分 -
+		53978
+	</li><li>
+		排名 -
+		3281
+	</li>
+</ul>
+<div id="recent_comments_wrap">
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html#3128455">1. Re:C/C++ 笔试、面试题目大汇总</a></li>
+    <li class="recent_comment_body">很考验基础的</li>
+    <li class="recent_comment_author">--C++专家</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/05/30/1747449.html#3056892">2. Re:C++中类的多态与虚函数的使用</a></li>
+    <li class="recent_comment_body">讲解的非常好。</li>
+    <li class="recent_comment_author">--得路洒</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/05/30/1747449.html#3056529">3. Re:C++中类的多态与虚函数的使用</a></li>
+    <li class="recent_comment_body">赞一个.</li>
+    <li class="recent_comment_author">--Sunstrider</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/06/11/1756724.html#3001664">4. Re:COM笔记-CoCreateInstance</a></li>
+    <li class="recent_comment_body">谢谢 帮到我了</li>
+    <li class="recent_comment_author">--仁明的球员</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/09/1822216.html#2991588">5. Re:windows笔记-内存映射文件</a></li>
+    <li class="recent_comment_body">写的不错</li>
+    <li class="recent_comment_author">--Castor</li>
+</ul>
+</div>
+</div>
+</div><div id="topview_posts_wrap">
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html">1. C/C++ 笔试、面试题目大汇总(120703)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/21/1832364.html">2. 【STL】list基础(28991)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1830493.html">3. C/C++ 笔试、面试题目大汇总2(21016)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/06/11/1756724.html">4. COM笔记-CoCreateInstance(18033)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/06/02/1750377.html">5. COM笔记-QueryInterface函数(13837)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/09/1822216.html">6. windows笔记-内存映射文件(13648)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/04/05/1704852.html">7. Eclipse常用快捷键(10398)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/07/13/2105395.html">8. VS2008 条件断点(9584)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/12/20/1911730.html">9. vs2008【断点无效】解决方法(9059)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/06/16/2083194.html">10. 【Android笔记】-TextView标签(9018)</a></li></ul></div>
+</div>
+</div><div id="topfeedback_posts_wrap">
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/05/13/2045951.html">1. DDraw笔记-一个简单的DDraw应用程序(15)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html">2. C/C++ 笔试、面试题目大汇总(11)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/07/13/2105395.html">3. VS2008 条件断点(10)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/06/11/1756724.html">4. COM笔记-CoCreateInstance(7)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/08/29/1811901.html">5. COM笔记-包容与聚合(5)</a></li></ul></div>
+</div></div><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html">1. C/C++ 笔试、面试题目大汇总(11)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/09/1822216.html">2. windows笔记-内存映射文件(8)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/07/13/2105395.html">3. VS2008 条件断点(8)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/21/1832364.html">4. 【STL】list基础(6)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/04/09/1708651.html">5. 使用ATL设计组件(vs2008)(4)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/05/30/1747449.html">6. C++中类的多态与虚函数的使用(4)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2012/04/18/2454660.html">7. windows笔记-API实现透明窗体(4)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2011/08/18/2144625.html">8. vs2008 showIncludes命令的使用(3)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/08/29/1811901.html">9. COM笔记-包容与聚合(3)</a></li><li><a href="http://www.cnblogs.com/fangyukuan/archive/2010/06/21/1761666.html">10. DLL-使用DLL(3)</a></li></ul></div>
+</div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	
+
+<div class="post">
+	<div class="postTitle">
+		<a id="cb_post_title_url" href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html">C/C++ 笔试、面试题目大汇总</a>
+	</div>
+	
+	<div class="postText">
+		<div id="cnblogs_post_body"><p style="text-align: left;">这些东西有点烦，有点无聊。如果要去C++面试就看看吧。几年前网上搜索的。刚才看到，就整理一下，里面有些被我改了，感觉之前说的不对或不完善。</p>
+<p style="text-align: left;">&nbsp;</p>
+<p><strong>1.</strong><strong>求下面函数的返回值（ 微软）</strong></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">int</span><span style="color: #000000;"> func(x) <br>{ <br>    </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> countx </span><span style="color: #000000;">=</span><span style="color: #800080;">0</span><span style="color: #000000;">; <br>    </span><span style="color: #0000ff;">while</span><span style="color: #000000;">(x) <br>    { <br>          countx </span><span style="color: #000000;">++</span><span style="color: #000000;">; <br>          x </span><span style="color: #000000;">=</span><span style="color: #000000;"> x</span><span style="color: #000000;">&amp;</span><span style="color: #000000;">(x</span><span style="color: #000000;">-</span><span style="color: #800080;">1</span><span style="color: #000000;">); <br>     } <br>    </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> countx; <br>} </span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>假定x = 9999。 答案：8</p>
+<p>思路：将x转化为2进制，看含有的1的个数。</p>
+<p>&nbsp;</p>
+<p><strong>2. </strong><strong>什么是“引用”？申明和使用“引用”要注意哪些问题？</strong></p>
+<p>答：引用就是某个目标变量的“别名”(alias)，对应用的操作与对变量直接操作效果完全相同。申明一个引用的时候，切记要对其进行<strong>初始化</strong>。引用声明完毕后，相当于目标变量名有两个名称，即该目标原名称和引用名，<strong>不能再把该引用名作为其他变量名的别名</strong>。声明一个引用，不是新定义了一个变量，它只表示该引用名是目标变量名的一个别名，它本身不是一种数据类型，因此引用本身不占存储单元，系<strong>统也不给引用分配存储单元</strong>。不能建立数组的引用。</p>
+<p>&nbsp;</p>
+<p><strong>3. </strong><strong>将“引用”作为函数参数有哪些特点？</strong></p>
+<p>（1）<strong>传递引用给函数与传递指针的效果是一样的</strong>。这时，被调函数的形参就成为原来主调函数中的实参变量或对象的一个别名来使用，所以在被调函数中对形参变量的操作就是对其相应的目标对象（在主调函数中）的操作。</p>
+<p>（2）<strong>使用引用传递函数的参数，在内存中并没有产生实参的副本，它是直接对实参操作</strong>；而使用一般变量传递函数的参数，当发生函数调用时，需要给形参分配存储单元，形参变量是实参变量的副本；如果传递的是对象，还将调用拷贝构造函数。因此，当参数传递的数据较大时，<strong>用引用比用一般变量传递参数的效率和所占空间都好。</strong></p>
+<p>（3）使用指针作为函数的参数虽然也能达到与使用引用的效果，但是，在被调函数中<span style="color: #ff00ff;"><strong>同样要给形参分配存储单元</strong></span>，且需要重复使用"*指针变量名"的形式进行运算，这很容易产生错误且程序的阅读性较差；另一方面，<strong>在主调函数的调用点处，必须用变量的地址作为实参。而引用更容易使用，更清晰。</strong></p>
+<p><strong><br></strong></p>
+<p><strong>4. </strong><strong>在什么时候需要使用“常引用”？　</strong></p>
+<p>如果既要利用引用提高程序的效率，又要保护传递给函数的数据不在函数中被改变，就应使用常引用。常引用声明方式：<strong>const </strong><strong>类型标识符 &amp;引用名=目标变量名；</strong></p>
+<p>例1</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">int</span><span style="color: #000000;"> a;<br></span><span style="color: #0000ff;">const</span><span style="color: #0000ff;">int</span><span style="color: #000000;">&amp;</span><span style="color: #000000;">ra </span><span style="color: #000000;">= </span><span style="color: #000000;">a;<br>ra </span><span style="color: #000000;">= </span><span style="color: #800080;">1</span><span style="color: #000000;">; </span><span style="color: #008000;">// </span><span style="color: #008000;">错误</span><span style="color: #008000;"><br></span><span style="color: #000000;">a </span><span style="color: #000000;">= </span><span style="color: #800080;">1</span><span style="color: #000000;">;  </span><span style="color: #008000;">// </span><span style="color: #008000;">正确</span></div>
+</div>
+<p>&nbsp;</p>
+<p>例2</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">string</span><span style="color: #000000;"> foo( );<br></span><span style="color: #0000ff;">void</span><span style="color: #000000;"> bar(</span><span style="color: #0000ff;">string</span><span style="color: #000000;">&amp;s)</span><span style="color: #000000;"><br></span><span style="color: #008000;">//</span><span style="color: #008000;"> 那么下面的表达式将是非法的：</span><span style="color: #008000;"><br></span><span style="color: #000000;">bar(foo( ));<br>bar(</span><span style="color: #800000;">"</span><span style="color: #800000;">hello world</span><span style="color: #800000;">"</span><span style="color: #000000;">);</span></div>
+</div>
+<p>原因在于foo( )和"hello world"串都会产生一个临时对象，而在C++中，这些临时对象都是const类型的。因此上面的表达式就是试图将一个const类型的对象转换为非const类型，这是非法的。</p>
+<p>引用型参数应该在能被定义为const的情况下，尽量定义为const 。</p>
+<p>&nbsp;</p>
+<p><strong>5. 将“引用”作为函数返回值类型的格式、好处和需要遵守的规则?</strong></p>
+<p>格式：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">类型标识符 </span><span style="color: #000000;">&amp;</span><span style="color: #000000;"><span style="color: #ff0000;">函数名</span>（形参列表及类型说明）<br>{ <br>　　</span><span style="color: #008000;">//</span><span style="color: #008000;">函数体</span><span style="color: #008000;"><br></span><span style="color: #000000;">}</span></div>
+</div>
+<p><span style="color: #ff00ff;">好处</span>：在内存中不产生被返回值的副本；（注意：正是因为这点原因，所以返回一个局部变量的引用是不可取的。因为随着该局部变量生存期的结束，相应的引用也会失效，产生runtime error!</p>
+<p><span style="color: #ff00ff;">注意</span>：</p>
+<p>（1）<strong>不能返回局部变量的引用</strong>。这条可以参照Effective C++[1]的Item 31。主要原因是局部变量会在函数返回后被销毁，因此被返回的引用就成为了"无所指"的引用，程序会进入未知状态。</p>
+<p>（2）<strong>不能返回函数内部new分配的内存的引用(<span style="color: #ff00ff;">这个要注意啦，很多人没意识到，哈哈。。。</span>）</strong>。
+ 这条可以参照Effective C++[1]的Item 
+31。虽然不存在局部变量的被动销毁问题，可对于这种情况（返回函数内部new分配内存的引用），又面临其它尴尬局面。例如，被函数返回的引用只是作为一
+个临时变量出现，而没有被赋予一个实际的变量，那么这个引用所指向的空间（由new分配）就无法释放，<strong>造成memory leak</strong>。</p>
+<p>（3）<strong>可以返回类成员的引用，但最好是const</strong>。 这条原则可以参照Effective 
+C++[1]的Item 30。主要原因是当对象的属性是与某种业务规则（business 
+rule）相关联的时候，其赋值常常与某些其它属性或者对象的状态有关，因此有必要将赋值操作封装在一个业务规则当中。如果其它对象可以获得该属性的非常
+量引用（或指针），那么对该属性的单纯赋值就会破坏业务规则的完整性。</p>
+<p>（4）<strong>流操作符重载</strong>返回值申明为“引用”的作用：</p>
+<p><strong>流操作符&lt;&lt;和&gt;&gt;，</strong>这两个操作符常常希望被连续使用，例如：cout &lt;&lt;"hello" &lt;&lt; endl;　因此这两个操作符的返回值应该是一个仍然支持这两个操作符的流引用。可选的其它方案包括：返回一个流对象和返回一个流对象指针。但是<strong>对于返回一个流对象，程序必须重新（拷贝）构造一个新的流对象</strong>，也就是说，连续的两个&lt;&lt;操作符实际上是针对不同对象的！这无法让人接受。<strong>对于返回一个流指针则不能连续使用&lt;&lt;操作符</strong>。
+ 因此，返回一个流对象引用是惟一选择。这个唯一选择很关键，它说明了引用的重要性以及无可替代性，也许这就是C++语言中引入引用这个概念的原因吧。 
+赋值操作符=。这个操作符象流操作符一样，是可以连续使用的，例如：x = j = 10;或者(x=10)=100;<span style="color: #ff00ff;">赋值操作符的返回值必须是一个左值</span>，以便可以被继续赋值。因此引用成了这个操作符的惟一返回值选择。</p>
+<p>&nbsp;</p>
+<p>例3</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">＃include </span><span style="color: #000000;">&lt;</span><span style="color: #000000;">iostream.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;">&amp;</span><span style="color: #000000;">put(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> n);<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> vals[</span><span style="color: #800080;">10</span><span style="color: #000000;">];<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> error </span><span style="color: #000000;">= -</span><span style="color: #800080;">1</span><span style="color: #000000;">;</span></div>
+<div><span style="color: #000000;"><br></span><span style="color: #0000ff;">void</span><span style="color: #000000;"> main()<br>{<br>　　put(</span><span style="color: #800080;">0</span><span style="color: #000000;">) </span><span style="color: #000000;">= </span><span style="color: #800080;">10</span><span style="color: #000000;">; </span><span style="color: #008000;">// </span><span style="color: #008000;">以put(0)函数值作为左值，等价于vals[0]=10;</span><span style="color: #008000;"><br></span><span style="color: #000000;">　　put(</span><span style="color: #800080;">9</span><span style="color: #000000;">) </span><span style="color: #000000;">= </span><span style="color: #800080;">20</span><span style="color: #000000;">; </span><span style="color: #008000;">// </span><span style="color: #008000;">以put(9)函数值作为左值，等价于vals[9]=20;</span><span style="color: #008000;"><br></span><span style="color: #000000;">　　cout </span><span style="color: #000000;">&lt;&lt; </span><span style="color: #000000;">vals[</span><span style="color: #800080;">0</span><span style="color: #000000;">];<br>　　cout </span><span style="color: #000000;">&lt;&lt; </span><span style="color: #000000;">vals[</span><span style="color: #800080;">9</span><span style="color: #000000;">];<br>}</span></div>
+<div><span style="color: #000000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;">&amp;</span><span style="color: #000000;">put(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> n)<br>{<br></span><span style="color: #0000ff;">　　if</span><span style="color: #000000;"> (n</span><span style="color: #000000;">&gt;=</span><span style="color: #800080;">0</span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> n</span><span style="color: #000000;">&lt;=</span><span style="color: #800080;">9</span><span style="color: #000000;"> )&nbsp;</span></div>
+<div><span style="color: #000000;">　　{<br></span></div>
+<div><span style="color: #000000;">&nbsp;</span><span style="color: #0000ff;">　　　　return</span><span style="color: #000000;"> vals[n];&nbsp;</span></div>
+<div><span style="color: #000000;">&nbsp;</span><span style="font-family: 'Courier New';">　　}</span></div>
+<div><span style="color: #0000ff;">　　else</span><span style="color: #000000;">&nbsp;</span></div>
+<div><span style="color: #000000;">　　{</span></div>
+<div><span style="color: #000000;">　　　　cout </span><span style="color: #000000;">&lt;&lt; </span><span style="color: #800000;">"</span><span style="color: #800000;">subscript error</span><span style="color: #800000;">"</span><span style="color: #000000;">;&nbsp;</span></div>
+<div><span style="color: #000000;">&nbsp;</span><span style="color: #0000ff;">　　　　return</span><span style="color: #000000;"> error;</span></div>
+<div><span style="color: #000000;">&nbsp;</span><span style="font-family: 'Courier New';">　　}</span></div>
+<div><span style="color: #000000;">}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>（5）<strong>在另外的一些操作符中，却千万不能返回引用：+-*/ 四则运算符。它们不能返回引用</strong>，Effective
+ C++[1]的Item23详细的讨论了这个问题。主要原因是这四个操作符没有side 
+effect，因此，它们必须构造一个对象作为返回值，可选的方案包括：返回一个对象、返回一个局部变量的引用，返回一个new分配的对象的引用、返回一
+ 个静态对象引用。根据前面提到的引用作为返回值的三个规则，第2、3两个方案都被否决了。静态对象的引用又因为((a+b) == 
+(c+d))会永远为true而导致错误。所以可选的只剩下返回一个对象了。</p>
+<p>&nbsp;</p>
+<p><strong>6. “引用”与多态的关系？</strong></p>
+<p>引用是除指针外另一个可以产生多态效果的手段。这意味着，一个基类的引用可以指向它的派生类实例（见：<a id="ctl03_TitleUrl" href="http://www.cnblogs.com/fangyukuan/archive/2010/05/30/1747449.html" target="_blank">C++中类的多态与虚函数的使用</a>）。</p>
+<p>例4</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">Class A; <br>Class B : Class A<br>{<br>　　</span><span style="color: #008000;">//</span><span style="color: #008000;"> ...</span><span style="color: #008000;"><br></span><span style="color: #000000;">};  <br>B b;<br>A</span><span style="color: #000000;">&amp;</span><span style="color: #0000ff;">ref</span><span style="color: #000000;">=</span><span style="color: #000000;"> b;</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>7. “</strong><strong>引用”与指针的区别是什么？</strong></p>
+<p>指针通过某个指针变量指向一个对象后，对它所指向的变量<span style="color: #ff00ff;">间接操作</span>。程序中使用指针，程序的可读性差；</p>
+<p>而引用本身就是目标变量的别名，对引用的操作就是对目标变量的操作。此外，就是上面提到的对函数传ref和pointer的区别。</p>
+<p>&nbsp;</p>
+<p><strong>8. </strong><strong>什么时候需要“引用”？</strong></p>
+<p>流操作符&lt;&lt;和&gt;&gt;、赋值操作符=的返回值、拷贝构造函数的参数、赋值操作符=的参数、其它情况都推荐使用引用。</p>
+<p>&nbsp;</p>
+<p><strong>9. </strong><strong>结构与联合有和区别？</strong><br>1. 结构和联合都是由多个不同的数据类型成员组成, 但在任何同一时刻, 联合中<span style="color: #ff00ff;">只存放了一个被选中的成员</span>（所有成员共用一块地址空间）, 而结构的<span style="color: #ff00ff;">所有成员都存在</span>（不同成员的存放地址不同）。&nbsp;<br>2. 对于联合的不同成员赋值, 将会对其它成员重写,&nbsp;原来成员的值就不存在了, 而对于结构的不同成员赋值是互不影响的。</p>
+<p>&nbsp;</p>
+<p><strong>10. </strong><strong>下面关于“联合”的题目的输出？</strong></p>
+<p>a)</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">＃include </span><span style="color: #000000;">&lt;</span><span style="color: #000000;">stdio.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br>union<br>{<br></span><span style="color: #0000ff;">　　int</span><span style="color: #000000;"> i;<br></span><span style="color: #0000ff;">　　char</span><span style="color: #000000;"> x[</span><span style="color: #800080;">2</span><span style="color: #000000;">];<br>}a;<br><br></span><span style="color: #0000ff;">void</span><span style="color: #000000;"> main()<br>{<br>　　a.x[</span><span style="color: #800080;">0</span><span style="color: #000000;">] </span><span style="color: #000000;">=</span><span style="color: #800080;">10</span><span style="color: #000000;">; <br>　　a.x[</span><span style="color: #800080;">1</span><span style="color: #000000;">] </span><span style="color: #000000;">=</span><span style="color: #800080;">1</span><span style="color: #000000;">;<br>　　printf(</span><span style="color: #800000;">"</span><span style="color: #800000;">%d</span><span style="color: #800000;">"</span><span style="color: #000000;">,a.i);<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>答案：266 (低位低地址，高位高地址，内存占用情况是Ox010A）</p>
+<p>&nbsp;</p>
+<p>b)</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">   main() <br>     { <br>         union{                  </span><span style="color: #008000;">/*</span><span style="color: #008000;">定义一个联合</span><span style="color: #008000;">*/</span><span style="color: #000000;"> <br>              </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> i; <br>              </span><span style="color: #0000ff;">struct</span><span style="color: #000000;">{            </span><span style="color: #008000;">/*</span><span style="color: #008000;">在联合中定义一个结构</span><span style="color: #008000;">*/</span><span style="color: #000000;"> <br>                   </span><span style="color: #0000ff;">char</span><span style="color: #000000;"> first; <br>                   </span><span style="color: #0000ff;">char</span><span style="color: #000000;"> second; <br>              }half; <br>          }number; <br>         number.i</span><span style="color: #000000;">=</span><span style="color: #800080;">0x4241</span><span style="color: #000000;">;         </span><span style="color: #008000;">/*</span><span style="color: #008000;">联合成员赋值</span><span style="color: #008000;">*/</span><span style="color: #000000;"> <br>         printf(</span><span style="color: #800000;">"</span><span style="color: #800000;">%c%c\n</span><span style="color: #800000;">"</span><span style="color: #000000;">, number.half.first, mumber.half.second); <br>         number.half.first</span><span style="color: #000000;">=</span><span style="color: #800000;">'</span><span style="color: #800000;">a</span><span style="color: #800000;">'</span><span style="color: #000000;">;   </span><span style="color: #008000;">/*</span><span style="color: #008000;">联合中结构成员赋值</span><span style="color: #008000;">*/</span><span style="color: #000000;"> <br>         number.half.second</span><span style="color: #000000;">=</span><span style="color: #800000;">'</span><span style="color: #800000;">b</span><span style="color: #800000;">'</span><span style="color: #000000;">; <br>         printf(</span><span style="color: #800000;">"</span><span style="color: #800000;">%x\n</span><span style="color: #800000;">"</span><span style="color: #000000;">,number.i); <br>         getch(); <br>     } </span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>答案： AB&nbsp;&nbsp; (0x41对应'A',是低位；Ox42对应'B',是高位）</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6261 (number.i和number.half共用一块地址空间）</p>
+<p>&nbsp;</p>
+<p><strong>11. </strong><strong>已知strcpy的函数原型：<em>char *strcpy(char *strDest, const char *strSrc)</em>其中strDest 是目的字符串，strSrc 是源字符串。不调用C++/C 的字符串库函数，请编写函数 strcpy。</strong></p>
+<p><br>答案：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">/*</span><span style="color: #008000;"><br>编写strcpy函数（10分）<br>已知strcpy函数的原型是<br>    char *strcpy(char *strDest, const char *strSrc);<br>    其中strDest是目的字符串，strSrc是源字符串。<br>（1）不调用C++/C的字符串库函数，请编写函数 strcpy<br>（2）strcpy能把strSrc的内容复制到strDest，为什么还要char * 类型的返回值？<br>答：为了 实现链式表达式。                            // 2分<br>例如    int length = strlen( strcpy( strDest, “hello world”) );<br></span><span style="color: #008000;">*/</span><span style="color: #000000;"><br><br><br>#include </span><span style="color: #000000;">&lt;</span><span style="color: #000000;">assert.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br>#include </span><span style="color: #000000;">&lt;</span><span style="color: #000000;">stdio.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">strcpy(</span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">strDest, </span><span style="color: #0000ff;">const</span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">strSrc)<br>{<br>    assert((strDest</span><span style="color: #000000;">!=</span><span style="color: #000000;">NULL) </span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> (strSrc </span><span style="color: #000000;">!=</span><span style="color: #000000;">NULL));        </span><span style="color: #008000;">//</span><span style="color: #008000;"> 2分</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;"> address </span><span style="color: #000000;">=</span><span style="color: #000000;"> strDest;                        　　</span><span style="color: #008000;">//</span><span style="color: #008000;"> 2分</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">while</span><span style="color: #000000;">( (</span><span style="color: #000000;">*</span><span style="color: #000000;">strDest</span><span style="color: #000000;">++</span><span style="color: #000000;">=</span><span style="color: #000000;">*</span><span style="color: #000000;">strSrc</span><span style="color: #000000;">++</span><span style="color: #000000;">) </span><span style="color: #000000;">!=</span><span style="color: #800000;">'</span><span style="color: #800000;">\0</span><span style="color: #800000;">'</span><span style="color: #000000;"> )　　　　　　　</span><span style="color: #008000;">//</span><span style="color: #008000;"> 2分</span><span style="color: #008000;"><br></span><span style="color: #000000;">       NULL; <br>    </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> address ;                                　　　</span><span style="color: #008000;">//</span><span style="color: #008000;"> 2分</span><span style="color: #008000;"><br></span><span style="color: #000000;">}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>另外strlen函数如下：</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">#include</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">stdio.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br>#include</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">assert.h</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> <br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> strlen( </span><span style="color: #0000ff;">const</span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">str )  </span><span style="color: #008000;">//</span><span style="color: #008000;"> 输入参数const</span><span style="color: #008000;"><br></span><span style="color: #000000;">{<br>    assert( str </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL );  </span><span style="color: #008000;">//</span><span style="color: #008000;"> 断言字符串地址非0</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> len = 0;<br>    </span><span style="color: #0000ff;">while</span><span style="color: #000000;">( (</span><span style="color: #000000;">*</span><span style="color: #000000;">str</span><span style="color: #000000;">++</span><span style="color: #000000;">) </span><span style="color: #000000;">!=</span><span style="color: #800000;">'</span><span style="color: #800000;">\0</span><span style="color: #800000;">'</span><span style="color: #000000;"> ) <br>    { <br>        len</span><span style="color: #000000;">++</span><span style="color: #000000;">; <br>    } <br>    </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> len;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>12. 已知String类定义如下</strong>：</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">class</span><span style="color: #000000;"> String<br>{<br></span><span style="color: #0000ff;">public</span><span style="color: #000000;">:<br>　　String(const char </span><span style="color: #000000;">*</span><span style="color: #000000;">str </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL); </span><span style="color: #008000;">//</span><span style="color: #008000;"> 通用构造函数</span><span style="color: #008000;"><br></span><span style="color: #000000;">　　String(const String </span><span style="color: #000000;">&amp;</span><span style="color: #000000;">another);  </span><span style="color: #008000;">//</span><span style="color: #008000;"> 拷贝构造函数</span><span style="color: #008000;"><br></span><span style="color: #000000;">　　~</span><span style="color: #000000;">String(); </span><span style="color: #008000;">//</span><span style="color: #008000;"> 析构函数</span><span style="color: #008000;"><br></span><span style="color: #000000;">　　String</span><span style="color: #000000;">&amp;</span><span style="color: #000000;"> operater </span><span style="color: #000000;">=</span><span style="color: #000000;">(</span><span style="color: #0000ff;">const</span><span style="color: #000000;"> String </span><span style="color: #000000;">&amp;</span><span style="color: #000000;">rhs); </span><span style="color: #008000;">//</span><span style="color: #008000;"> 赋值函数</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">private</span><span style="color: #000000;">:<br></span><span style="color: #0000ff;">　　char</span><span style="color: #000000;">* </span><span style="color: #000000;">m_data; </span><span style="color: #008000;">//</span><span style="color: #008000;"> 用于保存字符串</span><span style="color: #008000;"><br></span><span style="color: #000000;">};</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>尝试写出类的成员函数实现。</p>
+<p><strong>答案：</strong></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">String::String(</span><span style="color: #0000ff;">const</span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">str)<br>{<br>   </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( str </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL ) </span><span style="color: #008000;">// </span><span style="color: #008000;">strlen在参数为NULL时会抛异常才会有这步判断</span><span style="color: #008000;"><br></span><span style="color: #000000;">   {<br>       m_data </span><span style="color: #000000;">=</span><span style="color: #0000ff;">new</span><span style="color: #0000ff;">char</span><span style="color: #000000;">[</span><span style="color: #800080;">1</span><span style="color: #000000;">] ;<br>       m_data[</span><span style="color: #800080;">0</span><span style="color: #000000;">] </span><span style="color: #000000;">=</span><span style="color: #800000;">'</span><span style="color: #800000;">\0</span><span style="color: #800000;">'</span><span style="color: #000000;"> ;<br>   }<br>   </span><span style="color: #0000ff;">else</span><span style="color: #000000;"><br>   {<br>       m_data </span><span style="color: #000000;">=</span><span style="color: #0000ff;">new</span><span style="color: #0000ff;">char</span><span style="color: #000000;">[strlen(str) </span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">];<br>       strcpy(m_data,str);<br>   }<br>} <br>String::String(</span><span style="color: #0000ff;">const</span><span style="color: #000000;"> String </span><span style="color: #000000;">&amp;</span><span style="color: #000000;">another)<br>{<br>    m_data </span><span style="color: #000000;">=</span><span style="color: #0000ff;">new</span><span style="color: #0000ff;">char</span><span style="color: #000000;">[strlen(another.m_data) </span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">];<br>    strcpy(m_data,other.m_data);<br>}<br><br>String</span><span style="color: #000000;">&amp;</span><span style="color: #000000;"> String::</span><span style="color: #0000ff;">operator</span><span style="color: #000000;">=</span><span style="color: #000000;">(</span><span style="color: #0000ff;">const</span><span style="color: #000000;"> String </span><span style="color: #000000;">&amp;</span><span style="color: #000000;">rhs)<br>{<br>    </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( </span><span style="color: #0000ff;">this</span><span style="color: #000000;">==</span><span style="color: #000000;">&amp;</span><span style="color: #000000;">rhs)<br>        </span><span style="color: #0000ff;">return</span><span style="color: #000000;">*</span><span style="color: #0000ff;">this</span><span style="color: #000000;"> ;<br>    delete []m_data; </span><span style="color: #008000;">//</span><span style="color: #008000;">删除原来的数据，新开一块内存</span><span style="color: #008000;"><br></span><span style="color: #000000;">    m_data </span><span style="color: #000000;">=</span><span style="color: #0000ff;">new</span><span style="color: #0000ff;">char</span><span style="color: #000000;">[strlen(rhs.m_data) </span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">];<br>    strcpy(m_data,rhs.m_data);<br>    </span><span style="color: #0000ff;">return</span><span style="color: #000000;">*</span><span style="color: #0000ff;">this</span><span style="color: #000000;"> ;<br>}<br><br>String::</span><span style="color: #000000;">~</span><span style="color: #000000;">String()<br>{<br>    delete []m_data ;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>13. .h</strong><strong>头文件中的ifndef/define/endif 的作用？</strong></p>
+<p>答：防止该头文件被重复引用。</p>
+<p>&nbsp;</p>
+<p><strong>14. </strong><strong>＃include&lt;file.h&gt; 与＃include "file.h"的区别？</strong></p>
+<p>答：前者是从Standard Library的路径寻找和引用file.h，而后者是从当前工作路径搜寻并引用file.h。</p>
+<p>&nbsp;</p>
+<p><strong>15.</strong><strong>在C++程序中调用被C 编译器编译后的函数，为什么要加extern “C”？</strong></p>
+<p>首先，作为extern是C/C++语言中表明函数和全局变量<span style="color: #ff00ff;">作用范围</span>（可见性）的关键字，该关键字告诉编译器，<strong>其声明的函数和变量可以在本模块或其它模块中使用</strong>。</p>
+<p>通常，<strong>在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。</strong>例如，如果模块B欲引用该模块A中定义的全局变量和函数时只需包含模块A的头文件即可。这样，模块B中调用模块A中的函数时，在编译阶段，模块B虽然找不到该函数，但是并不会报错；它会在连接阶段中从模块A编译生成的目标代码中找到此函数</p>
+<p><span style="color: #ff00ff;">extern "C"是连接申明</span>(linkage declaration),被extern "C"修饰的变量和函数是按<strong><span style="color: #ff00ff;">照C语言方式编译和连接</span></strong>的,来看看C++中对类似。</p>
+<p>&nbsp;</p>
+<p><span style="color: #ff0000;">C的函数是怎样编译的：</span></p>
+<p>作为一种面向对象的语言，C++支持函数重载，而过程式语言C则不支持。函数被C++编译后在符号库中的名字与C语言的不同。例如，假设某个函数的原型为：</p>
+<p>void foo( int x, int y );</p>
+<p>该函数被C编译器编译后在符号库中的名字为_foo，而C++编译器则会产生像_foo_int_int之类的名字（不同的编译器可能生成的名字不同，但是都采用了相同的机制，生成的新名字称为“<strong>mangled name</strong>”）。</p>
+<p>_foo_int_int 这样的名字包含了函数名、函数参数数量及类型信息，<span style="color: #ff00ff;">C++就是靠这种机制来实现函数重载的</span>。例如，在C++中，函数void foo( int x, int y )与void foo( int x, float y )编译生成的符号是不相同的，后者为_foo_int_float。</p>
+<p>同 
+样地，C++中的变量除支持局部变量外，还支持类成员变量和全局变量。用户所编写程序的类成员变量可能与全局变量同名，我们以"."来区分。而本质上，编
+译器在进行编译时，与函数的处理相似，也为类中的变量取了一个独一无二的名字，这个名字与用户程序中同名的全局变量名字不同。</p>
+<p><strong>未加extern "C"声明时的连接方式</strong></p>
+<p>假设在C++中，模块A的头文件如下：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;"> 模块A头文件　moduleA.h</span><span style="color: #008000;"><br></span><span style="color: #000000;">#ifndef MODULE_A_H<br></span><span style="color: #0000ff;">#define</span><span style="color: #000000;"> MODULE_A_H</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> foo( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y );<br></span><span style="color: #0000ff;">#endif</span><span style="color: #000000;">　　</span><span style="color: #000000;"><br></span></div>
+</div>
+<p>&nbsp;</p>
+<p>在模块B中引用该函数：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;"> 模块B实现文件　moduleB.cpp</span><span style="color: #008000;"><br></span><span style="color: #000000;">＃include </span><span style="color: #800000;">"</span><span style="color: #800000;">moduleA.h</span><span style="color: #800000;">"</span><span style="color: #000000;"><br>foo(</span><span style="color: #800080;">2</span><span style="color: #000000;">,</span><span style="color: #800080;">3</span><span style="color: #000000;">);</span></div>
+</div>
+<p>实际上，在连接阶段，连接器会从模块A生成的目标文件moduleA.obj中寻找_foo_int_int这样的符号！</p>
+<p>&nbsp;</p>
+<p><strong>加extern "C"声明后的编译和连接方式</strong></p>
+<p>加extern "C"声明后，模块A的头文件变为：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;"> 模块A头文件　moduleA.h</span><span style="color: #008000;"><br></span><span style="color: #000000;">#ifndef MODULE_A_H<br></span><span style="color: #0000ff;">#define</span><span style="color: #000000;"> MODULE_A_H</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">extern</span><span style="color: #800000;">"</span><span style="color: #800000;">C</span><span style="color: #800000;">"</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> foo( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y );<br></span><span style="color: #0000ff;">#endif</span><span style="color: #000000;">　</span></div>
+</div>
+<p>在模块B的实现文件中仍然调用foo( 2,3 )，其结果是：<br>（1）模块A编译生成foo的目标代码时，没有对其名字进行特殊处理，采用了C语言的方式；</p>
+<p>（2）连接器在为模块B的目标代码寻找foo(2,3)调用时，寻找的是未经修改的符号名_foo。</p>
+<p>如果在模块A中函数声明了foo为extern "C"类型，而模块B中包含的是extern int foo( int x, int y ) ，则模块B找不到模块A中的函数；反之亦然。</p>
+<p>所以，可以用一句话概括<span style="color: #ff00ff;">extern “C”这个声明的真实目的</span>（任何语言中的任何语法特性的诞生都不是随意而为的，来源于真实世界的需求驱动。我们在思考问题时，不能只停留在这个语言是怎么做的，还要问一问它为什么要这么做，动机是什么，这样我们可以更深入地理解许多问题）：<span style="color: #ff00ff;"><strong>实现C++与C及其它语言的混合编程</strong></span>。　　</p>
+<p>明白了C++中extern "C"的设立动机，我们下面来具体分析extern "C"通常的使用技巧：</p>
+<p><strong>extern "C"</strong><strong>的惯用法</strong><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>（1）<strong>在C++中引用C语言中的函数和变量，在包含C语言头文件（假设为cExample.h）</strong>时，需进行下列处理：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">extern</span><span style="color: #800000;">"</span><span style="color: #800000;">C</span><span style="color: #800000;">"</span><span style="color: #000000;"><br>{<br>　　＃include</span><span style="color: #800000;">"</span><span style="color: #800000;">cExample.h</span><span style="color: #800000;">"</span><span style="color: #000000;"><br>}</span></div>
+</div>
+<p>而在C语言的头文件中，<strong>对其外部函数只能指定为extern类型</strong>，<strong>C</strong><strong>语言中不支持extern "C"声明</strong>，在.c文件中包含了extern"C"时会出现编译语法错误。</p>
+<p>&nbsp;</p>
+<p>C++引用C函数例子工程中包含的三个文件的源代码如下：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">/*</span><span style="color: #008000;"> c语言头文件：cExample.h </span><span style="color: #008000;">*/</span><span style="color: #000000;"><br>#ifndef C_EXAMPLE_H<br></span><span style="color: #0000ff;">#define</span><span style="color: #000000;"> C_EXAMPLE_H</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">extern</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> add(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, <span>int</span>y);<br></span><span style="color: #0000ff;">#endif</span></div>
+</div>
+<p>&nbsp;</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">/*</span><span style="color: #008000;"> c语言实现文件：cExample.c </span><span style="color: #008000;">*/</span><span style="color: #000000;"><br>#include </span><span style="color: #800000;">"</span><span style="color: #800000;">cExample.h</span><span style="color: #800000;">"</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> add( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y )<br>{<br></span><span style="color: #0000ff;">　　return</span><span style="color: #000000;"> x </span><span style="color: #000000;">+</span><span style="color: #000000;"> y;<br>}<br></span></div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;"> c++实现文件，调用add：cppFile.cpp</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">extern</span><span style="color: #800000;">"</span><span style="color: #800000;">C</span><span style="color: #800000;">"</span><span style="color: #000000;"> <br>{<br>　　＃include</span><span style="color: #800000;">"</span><span style="color: #800000;">cExample.h</span><span style="color: #800000;">"</span><span style="color: #000000;"><br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> main(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> argc, </span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;"> argv[])<br>{<br>　　add(</span><span style="color: #800080;">2</span><span style="color: #000000;">,</span><span style="color: #800080;">3</span><span style="color: #000000;">); <br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>如果C++调用一个C语言编写的.DLL时，当包括.DLL的头文件或声明接口函数时，应加extern "C" {　}。</p>
+<p>&nbsp;</p>
+<p>（2）<strong>在C中引用C++语言中的函数和变量时，C++的头文件需添加extern "C"，但是在C语言中不能直接引用声明了extern "C"的该头文件，应该仅将C文件中将C++中定义的extern"C"函数声明为extern类型。</strong></p>
+<p>C引用C++函数例子工程中包含的三个文件的源代码如下：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;">C++头文件cppExample.h</span><span style="color: #008000;"><br></span><span style="color: #000000;">#ifndef CPP_EXAMPLE_H<br></span><span style="color: #0000ff;">#define</span><span style="color: #000000;"> CPP_EXAMPLE_H</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">extern</span><span style="color: #800000;">"</span><span style="color: #800000;">C</span><span style="color: #800000;">"</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> add( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y );<br></span><span style="color: #0000ff;">#endif</span></div>
+</div>
+<p>&nbsp;</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">//</span><span style="color: #008000;">C++实现文件 cppExample.cpp</span><span style="color: #008000;"><br></span><span style="color: #000000;">＃include</span><span style="color: #800000;">"</span><span style="color: #800000;">cppExample.h</span><span style="color: #800000;">"</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> add( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y )<br>{<br></span><span style="color: #0000ff;">　　return</span><span style="color: #000000;"> x </span><span style="color: #000000;">+</span><span style="color: #000000;"> y;<br>}</span></div>
+</div>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #008000;">/*</span><span style="color: #008000;"> C实现文件 cFile.c<br>/* 这样会编译出错：＃i nclude "cExample.h" </span><span style="color: #008000;">*/</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">extern</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> add( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> x, </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> y );<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> main( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> argc, </span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;"> argv[] )<br>{<br>　　add( </span><span style="color: #800080;">2</span><span style="color: #000000;">, </span><span style="color: #800080;">3</span><span style="color: #000000;"> ); <br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}<br></span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>16. </strong><strong>关联、聚合(Aggregation)以及组合(Composition)的区别？</strong></p>
+<p>涉及到UML中的一些概念：</p>
+<p><strong>关联</strong>是表示两个类的一般性联系，比如“学生”和“老师”就是一种关联关系；</p>
+<p><strong>聚合</strong>表示has-a的关系，是一种相对松散的关系，聚合类不需要对被聚合类负责，如下图所示，用空的菱形表示聚合关系：</p>
+<p>从实现的角度讲，聚合可以表示为:</p>
+<p>class A {...}&nbsp; class B { A* a; .....}</p>
+<p><strong>组合</strong>表示contains-a的关系，关联性强于聚合：组合类与被组合类有相同的生命周期，组合类要对被组合类负责，采用实心的菱形表示组合关系：</p>
+<p>实现的形式是:</p>
+<p>class A{...} class B{ A a; ...}</p>
+<p>&nbsp;</p>
+<p><strong>17.面向对象的三个基本特征，并简单叙述之？</strong></p>
+<p>1. <strong>封装</strong>：将客观事物抽象成类，每个类对自身的数据和方法实行protection(private, protected,public)</p>
+<p>2. <strong>继承</strong>：广义的继承有三种实现形式：实现继承（指使用基类的属性和方法而无需额外编码的能力）、可视继承
+（子窗体使用父窗体的外观和实现代码）、接口继承（仅使用属性和方法，实现滞后到子类实现）。前两种（类继承）和后一种（对象组合=&gt;接口继承以及
+纯虚函数）构成了功能复用的两种方式。</p>
+<p>3. <strong>多态</strong>：<span>系统能够在运行时，能够根据其类型确定调用哪个重载的成员函数的能力</span><span>，称为<strong><span>多态性。（见：<a id="ctl03_TitleUrl" href="http://www.cnblogs.com/fangyukuan/archive/2010/05/30/1747449.html" target="_blank">C++中类的多态与虚函数的使用</a>）</span></strong></span></p>
+<p><strong><br></strong></p>
+<p><strong>18. </strong><strong>重载（overload)和重写(overried，有的书也叫做“覆盖”）的区别？</strong></p>
+<p>常考的题目。</p>
+<p>从定义上来说：</p>
+<p><strong>重载</strong>：是指允许存在多个<strong>同名函数</strong>，而这些函数的<strong>参数表不同</strong>（或许参数个数不同，或许参数类型不同，或许两者都不同）。</p>
+<p><strong>重写</strong>：是指子类重新定义父类虚函数的方法。</p>
+<p>从实现原理上来说：</p>
+<p><strong>重载</strong>：编译器根据函数不同的参数表，对同名函数的名称做修饰，然后这些同名函数就成了不同的函数（至少对于编译
+器来说是这样的）。如，有两个同名函数：function func(p:integer):integer;和function 
+func(p:string):integer;。那么编译器做过修饰后的函数名称可能是这样的：int_func、str_func。对于这两个函数的
+调用，在编译器间就已经确定了，是<strong>静态</strong>的。也就是说，<strong>它们的地址在编译期就绑定了（早绑定），</strong>因此，<strong>重载和多态无关</strong>！</p>
+<p><strong>重写</strong>：和多态真正相关。当子类重新定义了父类的虚函数后，父类指针根据赋给它的不同的子类指针，<strong>动态的调用</strong>属于子类的该函数，这样的函<strong>数调用在编译期间是无法确定的</strong>（调用的子类的虚函数的地址无法给出）。因此，<strong>这样的函数地址是在运行期绑定的（晚绑定）。</strong></p>
+<p><strong><br></strong></p>
+<p><strong>19. </strong><strong>多态的作用？</strong></p>
+<p>主要是两个：</p>
+<p>1. 隐藏实现细节，使得代码能够模块化；扩展代码模块，实现代码重用；</p>
+<p>2. 接口重用：为了类在继承和派生的时候<strong>，保证使用家族中任一类的实例的某一属性时的正确调用</strong>。</p>
+<p>&nbsp;</p>
+<p><strong>20. Ado</strong><strong>与</strong><strong>Ado.net</strong><strong>的相同与不同？</strong></p>
+<p>除了“能够让应用程序处理存储于DBMS 中的数据“这一基本相似点外，两者没有太多共同之处。但是Ado使用OLE DB 
+接口并基于微软的COM 技术，而ADO.NET 拥有自己的ADO.NET 接口并且基于微软的.NET 体系架构。众所周知.NET 
+体系不同于COM 体系，ADO.NET 接口也就完全不同于ADO和OLE DB 接口，这也就是说ADO.NET 
+和ADO是两种数据访问方式。ADO.net 提供对XML 的支持。</p>
+<p>&nbsp;</p>
+<p><strong>21.&nbsp;New delete </strong><strong>与</strong><strong>mallocfree </strong><strong>的联系与区别</strong><strong>?</strong><strong><br></strong>答案：都是在堆(heap)上进行动态的内存操作。用malloc函数需要指定内存分配的字节数并且不能初始化对象，new 会自动调用对象的构造函数。delete 会调用对象的destructor，而free 不会调用对象的destructor.</p>
+<p>（可以看看：<a id="ctl03_TitleUrl" href="http://www.cnblogs.com/fangyukuan/archive/2010/08/28/1811119.html" target="_blank">显式调用构造函数和析构函数</a>）</p>
+<p>&nbsp;</p>
+<p><strong>22.&nbsp;#define DOUBLE(x) x+x </strong><strong>，</strong><strong>i = 5*DOUBLE(5)</strong><strong>；</strong><strong> i </strong><strong>是多少？</strong><strong><br></strong>答案：i 为30。（<span style="color: #ff00ff;">注意直接展开就是了</span>） 5 * 5 + 5&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>23. </strong><strong>有哪几种情况只能用</strong><strong>intializationlist </strong><strong>而不能用</strong><strong>assignment?</strong></p>
+<p>答案：当类中含有const、reference 成员变量；基类的构造函数都需要初始化表。</p>
+<p>&nbsp;</p>
+<p><strong>24.&nbsp;C++</strong><strong>是不是类型安全的？</strong><br>答案：<span style="color: #ff00ff;">不是</span>。两个不同类型的指针之间可以强制转换（用reinterpret cast)。C#是类型安全的。</p>
+<p>&nbsp;</p>
+<p><strong>25.&nbsp;main </strong><strong>函数执行以前，还会执行什么代码？</strong><strong><br></strong>答案：全局对象的构造函数会在main 函数之前执行，为malloc分配必要的资源，等等。</p>
+<p>&nbsp;</p>
+<p><strong>26.&nbsp;</strong><strong>描述内存分配方式以及它们的区别</strong><strong>?</strong><br>1）<strong> </strong><strong>从静态存储区域分配</strong>。内存在程序编译的时候就已经分配好，这块内存在程序的整个运行期间都存在。例如<strong>全局变量，</strong><strong>static </strong><strong>变量</strong>。<br>2） <strong>在栈上创建</strong>。在执行函数时，<strong>函数内局部变量的存储单元都可以在栈上创建</strong>，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集。<br>3） <strong>从堆上分配</strong>，<strong>亦称动态内存分配</strong>。程序在运行的时候用malloc 或new 申请任意多少的内存，程序员自己负责在何时用free 或delete 释放内存。动态内存的生存期由程序员决定，使用非常灵活，但问题也最多。</p>
+<p>4) 代码区。</p>
+<p>&nbsp;</p>
+<p><strong>27.struct </strong><strong>和</strong><strong> class </strong><strong>的区别</strong></p>
+<p>答案：struct 的成员默认是公有的，而类的成员默认是私有的。struct 和 class 在其他方面是功能相当的。</p>
+<p>&nbsp;</p>
+<p>从感情上讲，大多数的开发者感到类和结构有很大的差别。感觉上结构仅仅象一堆缺乏封装和功能的开放的内存位，而类就象活的并且可靠的社会成员，它有
+智能服 
+务，有牢固的封装屏障和一个良好定义的接口。既然大多数人都这么认为，那么只有在你的类有很少的方法并且有公有数据（这种事情在良好设计的系统中是存在 
+的!）时，你也许应该使用 struct 关键字，否则，你应该使用 class 关键字。&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>28.</strong><strong>当一个类</strong><strong>A </strong><strong>中没有生命任何成员变量与成员函数</strong><strong>,</strong><strong>这时</strong><strong>sizeof(A)</strong><strong>的值是多少，如果不是零，请解释一下编译器为什么没有让它为零。（</strong><strong>Autodesk</strong><strong>）</strong><strong><br></strong>答案：肯定不是零。举个反例，如果是零的话，声明一个class A[10]对象数组，而每一个对象占用的空间是零，这时就没办法区分A[0],A[1]…了。</p>
+<p>&nbsp;</p>
+<p><strong>29. </strong><strong>在</strong><strong>8086 </strong><strong>汇编下，逻辑地址和物理地址是怎样转换的？（</strong><strong>Intel</strong><strong>）</strong><br>答案：通用寄存器给出的地址，是段内偏移地址，相应段寄存器地址*10H+通用寄存器内地址，就得到了真正要访问的地址。</p>
+<p>&nbsp;</p>
+<p><strong>30.&nbsp;</strong><strong>比较</strong><strong>C++</strong><strong>中的</strong><strong>4</strong><strong>种类型转换方式？</strong></p>
+<p>重点是static_cast, dynamic_cast和reinterpret_cast的区别和应用。(以后再补上吧）</p>
+<p>&nbsp;</p>
+<p><strong>31.</strong><strong>分别写出</strong><strong>BOOL,int,float,</strong><strong>指针类型的变量</strong><strong>a </strong><strong>与“零”的比较语句。</strong><br>答案：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">BOOL :   　</span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( </span><span style="color: #000000;">!</span><span style="color: #000000;">a ) or </span><span style="color: #0000ff;">if</span><span style="color: #000000;">(a)<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> :    　　</span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( a </span><span style="color: #000000;">==</span><span style="color: #800080;">0</span><span style="color: #000000;">)<br></span><span style="color: #0000ff;">float</span><span style="color: #000000;"> :   </span><span style="color: #0000ff;">const</span><span style="color: #000000;"> EXPRESSION EXP </span><span style="color: #000000;">=</span><span style="color: #800080;">0.000001</span><span style="color: #000000;"><br>          　　</span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( a </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> EXP</span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> a </span><span style="color: #000000;">&gt;-</span><span style="color: #000000;">EXP)<br>pointer :　</span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( a </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL) or </span><span style="color: #0000ff;">if</span><span style="color: #000000;">(a </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL)</span></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>32.</strong><strong>请说出</strong><strong>const</strong><strong>与</strong><strong>#define </strong><strong>相比，有何优点？</strong><strong><br></strong>1） <strong>const </strong><strong>常量有数据类型，而宏常量没有数据类型</strong>。编译器可以对前者进行类型<strong>安全检查</strong>。而对后者只进行字符替换，没有类型安全检查，并且在字符替换可能会产生意料不到的错误。<br>2） <strong>有些集成化的调试工具可以对</strong><strong>const </strong><strong>常量进行调试</strong>，但是不能对宏常量进行调试。</p>
+<p>&nbsp;</p>
+<p><strong>33.</strong><strong>简述数组与指针的区别？</strong><br>数组要么在静态存储区被创建（如全局数组），要么在栈上被创建。指针可以随时指向任意类型的内存块。<br>(1)修改内容上的差别<br>char a[] = “hello”;<br>a[0] = ‘X’;<br>char *p = “world”; // 注意p 指向常量字符串<br>p[0] = ‘X’; // 编译器不能发现该错误，运行时错误<br>(2) 用运算符sizeof 可以计算出数组的容量（字节数）。<strong>sizeof(p),p </strong><strong>为指针得到的是一个指针变量的字节数，而不是</strong><strong>p </strong><strong>所指的内存容量</strong>。C++/C 语言没有办法知道指针所指的内存容量，除非在申请内存时记住它。<strong>注意当数组作为函数的参数进行传递时，该数组自动退化为同类型的指针。</strong><strong><br></strong></p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">char</span><span style="color: #000000;"> a[] </span><span style="color: #000000;">=</span><span style="color: #800000;">"</span><span style="color: #800000;">hello world</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br></span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;">p </span><span style="color: #000000;">=</span><span style="color: #000000;"> a;<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #0000ff;">sizeof</span><span style="color: #000000;">(a) </span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;"> endl; </span><span style="color: #008000;">//</span><span style="color: #008000;"> 12 字节</span><span style="color: #008000;"><br></span><span style="color: #000000;">cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #0000ff;">sizeof</span><span style="color: #000000;">(p) </span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;"> endl; </span><span style="color: #008000;">//</span><span style="color: #008000;"> 4 字节</span></div>
+</div>
+<p>&nbsp;</p>
+<p>计算数组和指针的内存容量</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">void</span><span style="color: #000000;"> Func(</span><span style="color: #0000ff;">char</span><span style="color: #000000;"> a[</span><span style="color: #800080;">100</span><span style="color: #000000;">])<br>{<br>　　cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #0000ff;">sizeof</span><span style="color: #000000;">(a) </span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;"> endl; </span><span style="color: #008000;">//</span><span style="color: #008000;"> 4 字节而不是100 字节</span><span style="color: #008000;"><br></span><span style="color: #000000;">}</span></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>34.类成员函数的重载、覆盖和隐藏区别？</strong><br>答案：<br>a.成员函数被重载的特征：<br>（1）相同的范围（在同一个类中）；<br>（2）函数名字相同；<br>（3）参数不同；<br>（4）virtual 关键字可有可无。<br>b.覆盖是指派生类函数覆盖基类函数，特征是：<br>（1）不同的范围（分别位于派生类与基类）；<br>（2）函数名字相同；<br>（3）参数相同；<br>（4）基类函数必须有virtual 关键字。<br>c.“<strong>隐藏</strong>”是指派生类的函数屏蔽了与其同名的基类函数，规则如下：<br>（1）如果派生类的函数与基类的函数同名，但是参数不同。此时，不论有无virtual关键字，基类的函数将被隐藏（注意别与重载混淆）。<br>（2）如果派生类的函数与基类的函数同名，并且参数也相同，但是基类函数没有virtual 关键字。此时，基类的函数被隐藏（注意别与覆盖混淆）</p>
+<p>&nbsp;</p>
+<p><strong>35. There are twoint variables: a and b, don’t use “if”, “? 
+:”, “switch”or other judgementstatements, find out the biggest one of 
+the two numbers.</strong><br>答案：( ( a + b ) + abs( a- b ) ) / 2</p>
+<p>&nbsp;</p>
+<p><strong>36. </strong><strong>如何打印出当前源文件的文件名以及源文件的当前行号？</strong><strong><br></strong>答案：<br>cout &lt;&lt; __FILE__ ;<br>cout&lt;&lt;__LINE__ ;<br>__FILE__和__LINE__是系统预定义宏，这种宏并不是在某个文件中定义的，而是由编译器定义的</p>
+<p>。</p>
+<p><strong>37. main </strong><strong>主函数执行完毕后，是否可能会再执行一段代码，给出说明？</strong><strong><br></strong>答案：可以，可以用_onexit 注册一个函数，它会在main 之后执行int fn1(void), fn2(void), fn3(void),fn4 (void);</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">void</span><span style="color: #000000;"> main( </span><span style="color: #0000ff;">void</span><span style="color: #000000;"> )<br>{<br>　　String str(</span><span style="color: #800000;">"</span><span style="color: #800000;">zhanglin</span><span style="color: #800000;">"</span><span style="color: #000000;">);<br>　　_onexit( fn1 );<br>　　_onexit( fn2 );<br>　　_onexit( fn3 );<br>　　_onexit( fn4 );<br>　　printf( </span><span style="color: #800000;">"</span><span style="color: #800000;">This is executed first.\n</span><span style="color: #800000;">"</span><span style="color: #000000;"> );<br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> fn1()<br>{<br>　　printf( </span><span style="color: #800000;">"</span><span style="color: #800000;">next.\n</span><span style="color: #800000;">"</span><span style="color: #000000;"> );<br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> fn2()<br>{<br>　　printf( </span><span style="color: #800000;">"</span><span style="color: #800000;">executed </span><span style="color: #800000;">"</span><span style="color: #000000;"> );<br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> fn3()<br>{<br>　　printf( </span><span style="color: #800000;">"</span><span style="color: #800000;">is </span><span style="color: #800000;">"</span><span style="color: #000000;"> );<br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> fn4()<br>{<br>　　printf( </span><span style="color: #800000;">"</span><span style="color: #800000;">This </span><span style="color: #800000;">"</span><span style="color: #000000;"> );<br></span><span style="color: #0000ff;">　　return</span><span style="color: #800080;">0</span><span style="color: #000000;">;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>The _onexit function is passed the address of a function (func) to be
+ called whenthe program terminates normally. Successive calls to _onexit
+ create a registerof functions that are executed in LIFO 
+(last-in-first-out) order. The functionspassed to _onexit cannot take 
+parameters.</p>
+<p>&nbsp;</p>
+<p><strong>38. </strong><strong>如何判断一段程序是由</strong><strong>C </strong><strong>编译程序还是由</strong><strong>C++</strong><strong>编译程序编译的？</strong><br>答案：</p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">#ifdef __cplusplus<br>　　cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">c++</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br></span><span style="color: #0000ff;">#else</span><span style="color: #000000;"><br>　　cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">c</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br></span><span style="color: #0000ff;">#endif</span></div>
+</div>
+<p>&nbsp;</p>
+<p><span style="color: #ff00ff;">注意，后面很多代码啊。代码不看也罢。</span></p>
+<p>&nbsp;</p>
+<p><strong>39.</strong><strong>文件中有一组整数，要求排序后输出到另一个文件中（面试官，超级喜欢考排序的。你要去面试，数据结构的那几个排序一定要非常熟悉，用笔也可以写出代码来，用笔写代码，就是这样变态啊，其实感觉没有必要这样笔试）</strong><br>答案：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">＃include</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">iostream</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br>＃include</span><span style="color: #000000;">&lt;</span><span style="color: #000000;">fstream</span><span style="color: #000000;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">using</span><span style="color: #0000ff;">namespace</span><span style="color: #000000;"> std;<br><br></span><span style="color: #0000ff;">void</span><span style="color: #000000;"> Order(vector</span><span style="color: #000000;">&lt;</span><span style="color: #0000ff;">int</span><span style="color: #000000;">&gt;&amp;</span><span style="color: #000000;"> data)</span><span style="color: #008000;">//</span><span style="color: #008000;">bubble sort</span><span style="color: #008000;"><br></span><span style="color: #000000;">{<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> count </span><span style="color: #000000;">=</span><span style="color: #000000;"> data.size() ;<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> tag </span><span style="color: #000000;">=</span><span style="color: #0000ff;">false</span><span style="color: #000000;"> ; </span><span style="color: #008000;">//</span><span style="color: #008000;"> 设置是否需要继续冒泡的标志位</span><span style="color: #008000;"><br></span><span style="color: #0000ff;">for</span><span style="color: #000000;"> ( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> i </span><span style="color: #000000;">=</span><span style="color: #800080;">0</span><span style="color: #000000;"> ; i </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> count ; i</span><span style="color: #000000;">++</span><span style="color: #000000;">)<br>{<br></span><span style="color: #0000ff;">for</span><span style="color: #000000;"> ( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> j </span><span style="color: #000000;">=</span><span style="color: #800080;">0</span><span style="color: #000000;"> ; j </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> count </span><span style="color: #000000;">-</span><span style="color: #000000;"> i </span><span style="color: #000000;">-</span><span style="color: #800080;">1</span><span style="color: #000000;"> ; j</span><span style="color: #000000;">++</span><span style="color: #000000;">)<br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( data[j] </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> data[j</span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">])<br>{<br>tag </span><span style="color: #000000;">=</span><span style="color: #0000ff;">true</span><span style="color: #000000;"> ;<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> temp </span><span style="color: #000000;">=</span><span style="color: #000000;"> data[j] ;<br>data[j] </span><span style="color: #000000;">=</span><span style="color: #000000;"> data[j</span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">] ;<br>data[j</span><span style="color: #000000;">+</span><span style="color: #800080;">1</span><span style="color: #000000;">] </span><span style="color: #000000;">=</span><span style="color: #000000;"> temp ;<br>}<br>}<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( </span><span style="color: #000000;">!</span><span style="color: #000000;">tag )<br></span><span style="color: #0000ff;">break</span><span style="color: #000000;"> ;<br>}<br>}<br><br></span><span style="color: #0000ff;">void</span><span style="color: #000000;"> main( </span><span style="color: #0000ff;">void</span><span style="color: #000000;"> )<br>{<br>vector</span><span style="color: #000000;">&lt;</span><span style="color: #0000ff;">int</span><span style="color: #000000;">&gt;</span><span style="color: #000000;">data;<br>ifstream </span><span style="color: #0000ff;">in</span><span style="color: #000000;">(</span><span style="color: #800000;">"</span><span style="color: #800000;">c:\\data.txt</span><span style="color: #800000;">"</span><span style="color: #000000;">);<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( </span><span style="color: #000000;">!</span><span style="color: #0000ff;">in</span><span style="color: #000000;">)<br>{<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">file error!</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br>exit(</span><span style="color: #800080;">1</span><span style="color: #000000;">);<br>}<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> temp;<br></span><span style="color: #0000ff;">while</span><span style="color: #000000;"> (</span><span style="color: #000000;">!</span><span style="color: #0000ff;">in</span><span style="color: #000000;">.eof())<br>{<br></span><span style="color: #0000ff;">in</span><span style="color: #000000;">&gt;&gt;</span><span style="color: #000000;">temp;<br>data.push_back(temp);<br>}<br></span><span style="color: #0000ff;">in</span><span style="color: #000000;">.close(); </span><span style="color: #008000;">//</span><span style="color: #008000;">关闭输入文件流</span><span style="color: #008000;"><br></span><span style="color: #000000;">Order(data);<br>ofstream </span><span style="color: #0000ff;">out</span><span style="color: #000000;">(</span><span style="color: #800000;">"</span><span style="color: #800000;">c:\\result.txt</span><span style="color: #800000;">"</span><span style="color: #000000;">);<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( </span><span style="color: #000000;">!</span><span style="color: #0000ff;">out</span><span style="color: #000000;">)<br>{<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">file error!</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br>exit(</span><span style="color: #800080;">1</span><span style="color: #000000;">);<br>}<br></span><span style="color: #0000ff;">for</span><span style="color: #000000;"> ( i </span><span style="color: #000000;">=</span><span style="color: #800080;">0</span><span style="color: #000000;"> ; i </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> data.size() ; i</span><span style="color: #000000;">++</span><span style="color: #000000;">)<br></span><span style="color: #0000ff;">out</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;">data[i]</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">"</span><span style="color: #000000;">;<br></span><span style="color: #0000ff;">out</span><span style="color: #000000;">.close(); </span><span style="color: #008000;">//</span><span style="color: #008000;">关闭输出文件流</span><span style="color: #008000;"><br></span><span style="color: #000000;">}<br></span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>40. 链表题：一个链表的结点结构</strong></p>
+<div class="cnblogs_code">
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">struct</span><span style="color: #000000;"> Node<br>{<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> data ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">next ;<br>};<br>typedef </span><span style="color: #0000ff;">struct</span><span style="color: #000000;"> Node Node ;</span></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>(1)</strong><strong>已知链表的头结点</strong><strong>head,</strong><strong>写一个函数把这个链表逆序</strong><strong> ( Intel)</strong></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">Node </span><span style="color: #000000;">*</span><span style="color: #000000;"> ReverseList(Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head) </span><span style="color: #008000;">//</span><span style="color: #008000;">链表逆序</span><span style="color: #008000;"><br></span><span style="color: #000000;">{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL </span><span style="color: #000000;">||</span><span style="color: #000000;"> head</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL )<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> head ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">p3 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>p1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL ;<br></span><span style="color: #0000ff;">while</span><span style="color: #000000;"> ( p3 </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL )<br>{<br>p2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1 ;<br>p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2 ;<br>p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p3 ;<br>p3 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p3</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>}<br>p2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1 ;<br>head </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2 ;<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head ;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>(2)</strong><strong>已知两个链表</strong><strong>head1 </strong><strong>和</strong><strong>head2 </strong><strong>各自有序，请把它们合并成一个链表依然有序。</strong><strong>(</strong><strong>保留所有结点，即便大小相同）</strong></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">Node </span><span style="color: #000000;">*</span><span style="color: #000000;"> Merge(Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head1 , Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head2)<br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head1 </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL)<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head2 ;<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head2 </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL)<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head1 ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL;<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> head2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data )<br>{<br>head </span><span style="color: #000000;">=</span><span style="color: #000000;"> head1 ;<br>p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> head1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next;<br>p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> head2 ;<br>}<br></span><span style="color: #0000ff;">else</span><span style="color: #000000;"><br>{<br>head </span><span style="color: #000000;">=</span><span style="color: #000000;"> head2 ;<br>p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> head2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> head1 ;<br>}<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">pcurrent </span><span style="color: #000000;">=</span><span style="color: #000000;"> head ;<br></span><span style="color: #0000ff;">while</span><span style="color: #000000;"> ( p1 </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL </span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> p2 </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL)<br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( p1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data </span><span style="color: #000000;">&lt;=</span><span style="color: #000000;"> p2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data )<br>{<br>pcurrent</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1 ;<br>pcurrent </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1 ;<br>p1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>}<br></span><span style="color: #0000ff;">else</span><span style="color: #000000;"><br>{<br>pcurrent</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2 ;<br>pcurrent </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2 ;<br>p2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next ;<br>}<br>}<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( p1 </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL )<br>pcurrent</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p1 ;<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( p2 </span><span style="color: #000000;">!=</span><span style="color: #000000;"> NULL )<br>pcurrent</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> p2 ;<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head ;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>(3)</strong><strong>已知两个链表</strong><strong>head1 </strong><strong>和</strong><strong>head2 </strong><strong>各自有序，请把它们合并成一个链表依然有序，这次要求用递归方法进行。</strong><strong>(Autodesk)</strong><strong><br></strong>答案：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;">Node </span><span style="color: #000000;">*</span><span style="color: #000000;"> MergeRecursive(Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head1 , Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head2)<br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head1 </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL )<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head2 ;<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head2 </span><span style="color: #000000;">==</span><span style="color: #000000;"> NULL)<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head1 ;<br>Node </span><span style="color: #000000;">*</span><span style="color: #000000;">head </span><span style="color: #000000;">=</span><span style="color: #000000;"> NULL ;<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( head1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> head2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">data )<br>{<br>head </span><span style="color: #000000;">=</span><span style="color: #000000;"> head1 ;<br>head</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> MergeRecursive(head1</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next,head2);<br>}<br></span><span style="color: #0000ff;">else</span><span style="color: #000000;"><br>{<br>head </span><span style="color: #000000;">=</span><span style="color: #000000;"> head2 ;<br>head</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next </span><span style="color: #000000;">=</span><span style="color: #000000;"> MergeRecursive(head1,head2</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next);<br>}<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> head ;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>41. </strong><strong>分析一下这段程序的输出</strong><strong>(Autodesk)</strong></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">class</span><span style="color: #000000;"> B<br>{<br></span><span style="color: #0000ff;">public</span><span style="color: #000000;">:<br>B()<br>{<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">default constructor</span><span style="color: #800000;">"</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;">endl;<br>}<br></span><span style="color: #000000;">~</span><span style="color: #000000;">B()<br>{<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">destructed</span><span style="color: #800000;">"</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;">endl;<br>}<br>B(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> i):data(i)    </span><span style="color: #008000;">//</span><span style="color: #008000;">B(int) works as a converter ( int -&gt;instance of  B)</span><span style="color: #008000;"><br></span><span style="color: #000000;">{<br>cout</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #800000;">"</span><span style="color: #800000;">constructed by parameter </span><span style="color: #800000;">"</span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;"> data </span><span style="color: #000000;">&lt;&lt;</span><span style="color: #000000;">endl;<br>}<br></span><span style="color: #0000ff;">private</span><span style="color: #000000;">:<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> data;<br>};<br><br>B Play( B b) <br>{<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> b ;<br>}<br>(</span><span style="color: #800080;">1</span><span style="color: #000000;">)                                           results:<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> main(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> argc, </span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;"> argv[])      constructedby parameter </span><span style="color: #800080;">5</span><span style="color: #000000;"><br>{                                    destructed  B(</span><span style="color: #800080;">5</span><span style="color: #000000;">)形参析构<br>B t1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> Play(</span><span style="color: #800080;">5</span><span style="color: #000000;">); B t2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> Play(t1);   　 destructed  t1形参析构<br></span><span style="color: #0000ff;">return</span><span style="color: #800080;">0</span><span style="color: #000000;">;　　　　　　　　　　　　　　 destructed  t2　注意顺序！<br>}                                     destructed t1<br>(</span><span style="color: #800080;">2</span><span style="color: #000000;">)                                   results:<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> main(</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> argc, </span><span style="color: #0000ff;">char</span><span style="color: #000000;">*</span><span style="color: #000000;"> argv[])      constructedby parameter </span><span style="color: #800080;">5</span><span style="color: #000000;"><br>{                                    destructed  B(</span><span style="color: #800080;">5</span><span style="color: #000000;">)形参析构<br>B t1 </span><span style="color: #000000;">=</span><span style="color: #000000;"> Play(</span><span style="color: #800080;">5</span><span style="color: #000000;">); B t2 </span><span style="color: #000000;">=</span><span style="color: #000000;"> Play(</span><span style="color: #800080;">10</span><span style="color: #000000;">);   　 constructed by parameter </span><span style="color: #800080;">10</span><span style="color: #000000;"><br></span><span style="color: #0000ff;">return</span><span style="color: #800080;">0</span><span style="color: #000000;">;　　　　　　　　　　　　　　 destructed  B(</span><span style="color: #800080;">10</span><span style="color: #000000;">)形参析构<br>}                                    destructed  t2　注意顺序！<br>                                     destructed  t1</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>42. 写一个函数找出一个整数数组中，第二大的数（microsoft）</strong><br>答案：</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #0000ff;">const</span><span style="color: #0000ff;">int</span><span style="color: #000000;"> MINNUMBER </span><span style="color: #000000;">=</span><span style="color: #000000;">-</span><span style="color: #800080;">32767</span><span style="color: #000000;"> ;<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> find_sec_max( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> data[] , </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> count)<br>{<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> maxnumber </span><span style="color: #000000;">=</span><span style="color: #000000;"> data[</span><span style="color: #800080;">0</span><span style="color: #000000;">] ;<br></span><span style="color: #0000ff;">int</span><span style="color: #000000;"> sec_max </span><span style="color: #000000;">=</span><span style="color: #000000;"> MINNUMBER ;<br></span><span style="color: #0000ff;">for</span><span style="color: #000000;"> ( </span><span style="color: #0000ff;">int</span><span style="color: #000000;"> i </span><span style="color: #000000;">=</span><span style="color: #800080;">1</span><span style="color: #000000;"> ; i </span><span style="color: #000000;">&lt;</span><span style="color: #000000;"> count ; i</span><span style="color: #000000;">++</span><span style="color: #000000;">)<br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( data[i] </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> maxnumber )<br>{<br>sec_max </span><span style="color: #000000;">=</span><span style="color: #000000;"> maxnumber ;<br>maxnumber </span><span style="color: #000000;">=</span><span style="color: #000000;"> data[i] ;<br>}<br></span><span style="color: #0000ff;">else</span><span style="color: #000000;"><br>{<br></span><span style="color: #0000ff;">if</span><span style="color: #000000;"> ( data[i] </span><span style="color: #000000;">&gt;</span><span style="color: #000000;"> sec_max )<br>sec_max </span><span style="color: #000000;">=</span><span style="color: #000000;"> data[i] ;<br>}<br>}<br></span><span style="color: #0000ff;">return</span><span style="color: #000000;"> sec_max ;<br>}</span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p><strong>43. </strong><strong>写一个在一个字符串</strong><strong>(n)</strong><strong>中寻找一个子串</strong><strong>(m)</strong><strong>第一个位置的函数。</strong></p>
+<p>KMP算法效率最好，时间复杂度是Ｏ(n+m)。</p>
+<p>&nbsp;</p>
+<p><strong>44. </strong><strong>多重继承的内存分配问题：</strong><strong><br></strong><strong>&nbsp;&nbsp; </strong><strong>比如有</strong><strong>class A : public class B, public classC {}</strong><strong><br></strong><strong>&nbsp;&nbsp; </strong><strong>那么</strong><strong>A</strong><strong>的内存结构大致是怎么样的？</strong></p>
+<p>这个是compiler-dependent的, 不同的实现其细节可能不同。<br>如果不考虑有虚函数、虚继承的话就相当简单；否则的话，相当复杂。<br>可以参考《深入探索C++对象模型》</p>
+<p>&nbsp;</p>
+<p><strong>45. </strong><strong>如何判断一个单链表是有环的？（注意不能用标志位，最多只能用两个额外指针）</strong><strong><br></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div>
+<div><!--<br /><br />Code highlighting produced by Actipro CodeHighlighter (freeware)<br />http://www.CodeHighlighter.com/<br /><br />--><span style="color: #000000;"><br>   </span><span style="color: #0000ff;">struct</span><span style="color: #000000;"> node { </span><span style="color: #0000ff;">char</span><span style="color: #000000;"> val; node</span><span style="color: #000000;">*</span><span style="color: #000000;"> next;}<br>   </span><span style="color: #0000ff;">bool</span><span style="color: #000000;"> check(</span><span style="color: #0000ff;">const</span><span style="color: #000000;"> node</span><span style="color: #000000;">*</span><span style="color: #000000;"> head) {} </span><span style="color: #008000;">//</span><span style="color: #008000;">return false : 无环；true: 有环</span><span style="color: #000000;">一种O（n）的办法就是（搞两个指针，一个每次递增一步，一个每次递增两步，如果有环的话两者必然重合，反之亦然）：<br></span><span style="color: #0000ff;">bool</span><span style="color: #000000;"> check(</span><span style="color: #0000ff;">const</span><span style="color: #000000;"> node</span><span style="color: #000000;">*</span><span style="color: #000000;"> head)<br>{<br>    </span><span style="color: #0000ff;">if</span><span style="color: #000000;">(head</span><span style="color: #000000;">==</span><span style="color: #000000;">NULL)  </span><span style="color: #0000ff;">return</span><span style="color: #0000ff;">false</span><span style="color: #000000;">;<br>    node </span><span style="color: #000000;">*</span><span style="color: #000000;">low</span><span style="color: #000000;">=</span><span style="color: #000000;">head, </span><span style="color: #000000;">*</span><span style="color: #000000;">fast</span><span style="color: #000000;">=</span><span style="color: #000000;">head</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next;<br>    </span><span style="color: #0000ff;">while</span><span style="color: #000000;">(fast</span><span style="color: #000000;">!=</span><span style="color: #000000;">NULL </span><span style="color: #000000;">&amp;&amp;</span><span style="color: #000000;"> fast</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next</span><span style="color: #000000;">!=</span><span style="color: #000000;">NULL)<br>    {<br>        low</span><span style="color: #000000;">=</span><span style="color: #000000;">low</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next;<br>        fast</span><span style="color: #000000;">=</span><span style="color: #000000;">fast</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next</span><span style="color: #000000;">-&gt;</span><span style="color: #000000;">next;<br>        </span><span style="color: #0000ff;">if</span><span style="color: #000000;">(low</span><span style="color: #000000;">==</span><span style="color: #000000;">fast) </span><span style="color: #0000ff;">return</span><span style="color: #0000ff;">true</span><span style="color: #000000;">;<br>    }<br>    </span><span style="color: #0000ff;">return</span><span style="color: #0000ff;">false</span><span style="color: #000000;">;<br>}<br></span></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>&nbsp;</p>
+<p>下一篇：<a id="ctl03_TitleUrl" href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1830493.html" target="_blank">C/C++ 笔试、面试题目大汇总2</a></p>
+<p>&nbsp;</p>
+<p>本文地址：<a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html">http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1829871.html</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><br></strong></p></div><div style="display: block;" id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/fangyukuan/category/243354.html">C/C++</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/fangyukuan/tag/%E9%9D%A2%E8%AF%95/">面试</a></div>
+<div id="blog_post_info"><div id="green_channel">
+绿色通道：
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(1829871,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://space.cnblogs.com/msg/send/fangyukuan" target="_blank">与我联系</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/icon_weibo_24.png" alt=""></a>
+</div>
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/fangyukuan/" target="_blank"><img src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/u122502.jpg" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/fangyukuan/">fangyukuan</a><br>
+<a href="http://home.cnblogs.com/u/fangyukuan/followees">关注 - 3</a><br>
+<a href="http://home.cnblogs.com/u/fangyukuan/followers">粉丝 - 167</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+    <a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+    <div class="diggit" onclick="votePost(1829871,'Digg')">
+        <span class="diggnum" id="digg_count">11</span>
+    </div>
+	<div class="buryit" onclick="votePost(1829871,'Bury')"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/09/1822310.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/09/1822310.html" title="发布于2010-09-09 16:01">windows笔记-使用内存映射文件在进程之间共享数据</a><br><a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1830493.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/fangyukuan/archive/2010/09/18/1830493.html" title="发布于2010-09-18 23:43">C/C++ 笔试、面试题目大汇总2</a><br></div>
+</div>
+
+
+	</div>
+	
+	<div class="postfoot">
+		posted on <span id="post-date">2010-09-18 01:22</span> <a href="http://www.cnblogs.com/fangyukuan/">fangyukuan</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">11</span>)  <a href="http://i.cnblogs.com/EditPosts.aspx?postid=1829871" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(1829871);return false;">收藏</a>
+	</div>
+</div>
+<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=68353,cb_entryId=1829871,cb_blogApp=currentBlogApp,cb_blogUserGuid='354ffe58-9238-df11-ba8f-001cf0cd104b',cb_entryCreatedDate='2010/9/18 1:22:00';loadViewCount(cb_entryId);</script>
+
+<a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<a name="comments"></a>
+<br>
+<div id="comments">
+<h3>评论</h3>
+
+
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#1921704" class="layer">#1楼</a><a name="1921704" id="comment_anchor_1921704"></a>
+					<span>
+						 <span class="comment_date">2010-09-20 21:08</span>
+					</span>
+				<a id="a_comment_author_1921704" href="http://www.cnblogs.com/fangshenghui/" target="_blank">Sherwin_</a> <a href="http://msg.cnblogs.com/msg/send/Sherwin_" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_1921704" class="blog_comment_body">#include&lt;stdio.h&gt;#include&lt;assert.h&gt;
+ int strlen( const char *str )  // 输入参数const{    assert( str != NULL ); 
+ // 断言字符串地址非0    int len;    while( (*str++) != '\0' )     {         
+len++;     }     return len;}<br>怎么感觉 len有错,没有初始化!!</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(1921704,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(1921704,'Bury',this)">反对(0)</a></div><span id="comment_1921704_avatar" style="display:none;">http://pic.cnitblog.com/face/123362/20130512235859.png</span>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#1921709" class="layer">#2楼</a><a name="1921709" id="comment_anchor_1921709"></a>[<span class="louzhu">楼主</span>]
+					<span>
+						 <span class="comment_date">2010-09-20 21:19</span>
+					</span>
+				<a id="a_comment_author_1921709" href="http://www.cnblogs.com/fangyukuan/" target="_blank">fangyukuan</a> <a href="http://msg.cnblogs.com/msg/send/fangyukuan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_1921709" class="blog_comment_body"><a href="#1921704" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,1921704);">@</a>0hui0<br>是的，应该初始化才是对的。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(1921709,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(1921709,'Bury',this)">反对(0)</a></div><span id="comment_1921709_avatar" style="display:none;">http://pic.cnitblog.com/face/u122502.jpg</span>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2522468" class="layer">#3楼</a><a name="2522468" id="comment_anchor_2522468"></a>
+					<span>
+						 <span class="comment_date">2012-11-02 09:13</span>
+					</span>
+				<a id="a_comment_author_2522468" href="http://home.cnblogs.com/u/463547/" target="_blank">月光xia漫步</a> <a href="http://msg.cnblogs.com/msg/send/%e6%9c%88%e5%85%89xia%e6%bc%ab%e6%ad%a5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2522468" class="blog_comment_body">上面你说的(a+b)==(c+d)恒为真，但是，我在自己的程序中，测试的不对啊！<div class="cnblogs_Highlighter sh-gutter"><div><div id="highlighter_152282" class="syntaxhighlighter  cpp"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="cpp preprocessor">#include &lt;iostream&gt;</code></div><div class="line number2 index1 alt1"><code class="cpp keyword bold">using</code> <code class="cpp keyword bold">namespace</code> <code class="cpp plain">std;</code></div><div class="line number3 index2 alt2"><code class="cpp keyword bold">void</code> <code class="cpp plain">main()</code></div><div class="line number4 index3 alt1"><code class="cpp plain">{</code></div><div class="line number5 index4 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp color1 bold">int</code> <code class="cpp plain">a=1,b=2,c=3,d=4;</code></div><div class="line number6 index5 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">if</code> <code class="cpp plain">((a+b)==(c+d))</code></div><div class="line number7 index6 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number8 index7 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout&lt;&lt;</code><code class="cpp string">"a+b==c+d"</code><code class="cpp plain">&lt;&lt;endl;</code></div><div class="line number9 index8 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number10 index9 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp keyword bold">else</code></div><div class="line number11 index10 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">{</code></div><div class="line number12 index11 alt1"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">cout&lt;&lt;</code><code class="cpp string">"a+b!=c+d"</code><code class="cpp plain">&lt;&lt;endl;</code></div><div class="line number13 index12 alt2"><code class="cpp spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="cpp plain">}</code></div><div class="line number14 index13 alt1"><code class="cpp plain">}</code></div></div></td></tr></tbody></table></div></div></div></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2522468,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2522468,'Bury',this)">反对(0)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2559859" class="layer">#4楼</a><a name="2559859" id="comment_anchor_2559859"></a>[<span class="louzhu">楼主</span>]
+					<span>
+						 <span class="comment_date">2012-11-22 19:38</span>
+					</span>
+				<a id="a_comment_author_2559859" href="http://www.cnblogs.com/fangyukuan/" target="_blank">fangyukuan</a> <a href="http://msg.cnblogs.com/msg/send/fangyukuan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2559859" class="blog_comment_body"><a href="#2522468" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2522468);">@</a>月光xia漫步<br>请问你说的是哪道？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2559859,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2559859,'Bury',this)">反对(0)</a></div><span id="comment_2559859_avatar" style="display:none;">http://pic.cnitblog.com/face/u122502.jpg</span>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2559868" class="layer">#5楼</a><a name="2559868" id="comment_anchor_2559868"></a>
+					<span>
+						 <span class="comment_date">2012-11-22 19:55</span>
+					</span>
+				<a id="a_comment_author_2559868" href="http://home.cnblogs.com/u/463547/" target="_blank">月光xia漫步</a> <a href="http://msg.cnblogs.com/msg/send/%e6%9c%88%e5%85%89xia%e6%bc%ab%e6%ad%a5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2559868" class="blog_comment_body"><a href="#2559859" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2559859);">@</a>fangyukuan<br>5. 将“引用”作为函数返回值类型的格式、好处和需要遵守的规则?<br><br>（5）在另外的一些操作符中，却千万不能返回引用：+-*/ 四则运算符。它们不能返回引用<br>(a+b)==(c+d) 的问题</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2559868,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2559868,'Bury',this)">反对(0)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2914994" class="layer">#6楼</a><a name="2914994" id="comment_anchor_2914994"></a>
+					<span>
+						 <span class="comment_date">2014-04-10 18:52</span>
+					</span>
+				<a id="a_comment_author_2914994" href="http://www.cnblogs.com/marszm/" target="_blank">Mars_Zhang</a> <a href="http://msg.cnblogs.com/msg/send/Mars_Zhang" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2914994" class="blog_comment_body">第一题就错啦。。。你输入个99999试试<br>结果是10</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2914994,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2914994,'Bury',this)">反对(2)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2914996" class="layer">#7楼</a><a name="2914996" id="comment_anchor_2914996"></a>
+					<span>
+						 <span class="comment_date">2014-04-10 18:58</span>
+					</span>
+				<a id="a_comment_author_2914996" href="http://www.cnblogs.com/marszm/" target="_blank">Mars_Zhang</a> <a href="http://msg.cnblogs.com/msg/send/Mars_Zhang" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2914996" class="blog_comment_body">好吧。。。我搞错了。。假定是条件。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2914996,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2914996,'Bury',this)">反对(0)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2917647" class="layer">#8楼</a><a name="2917647" id="comment_anchor_2917647"></a>
+					<span>
+						 <span class="comment_date">2014-04-14 18:02</span>
+					</span>
+				<a id="a_comment_author_2917647" href="http://www.cnblogs.com/xylc/" target="_blank">星夜落尘</a> <a href="http://msg.cnblogs.com/msg/send/%e6%98%9f%e5%a4%9c%e8%90%bd%e5%b0%98" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2917647" class="blog_comment_body">“请说出const与#define 相比，有何优点？”<br><br>比较大的区别还在于#define是没有作用域的，只是文本替换，发生在预处理期，可能被undefine , redefine掉了。而const是有作用域的，在编译期。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2917647,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2917647,'Bury',this)">反对(0)</a></div><span id="comment_2917647_avatar" style="display:none;">http://pic.cnitblog.com/face/296875/20131011104501.png</span>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2934222" class="layer">#9楼</a><a name="2934222" id="comment_anchor_2934222"></a>
+					<span>
+						 <span class="comment_date">2014-05-07 20:44</span>
+					</span>
+				<a id="a_comment_author_2934222" href="http://home.cnblogs.com/u/269375/" target="_blank">上帝禁区</a> <a href="http://msg.cnblogs.com/msg/send/%e4%b8%8a%e5%b8%9d%e7%a6%81%e5%8c%ba" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2934222" class="blog_comment_body">6楼说1题是错的， 不要误导大家。第一题是9999，不是99999。因此楼主的是对的。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2934222,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2934222,'Bury',this)">反对(0)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#2978817" class="layer">#10楼</a><a name="2978817" id="comment_anchor_2978817"></a>
+					<span>
+						 <span class="comment_date">2014-07-07 17:16</span>
+					</span>
+				<a id="a_comment_author_2978817" href="http://www.cnblogs.com/cppentry/" target="_blank">cppentry</a> <a href="http://msg.cnblogs.com/msg/send/cppentry" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_2978817" class="blog_comment_body">面试题大全 <a href="http://www.cppentry.com/list.php?fid" target="_blank">http://www.cppentry.com/list.php?fid</a>-43-page-1.htm</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2978817,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2978817,'Bury',this)">反对(0)</a></div>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+		<div class="post">			
+			<div class="postTitle">
+				<a href="#3128455" class="layer">#11楼</a><a name="3128455" id="comment_anchor_3128455"></a><span id="comment-maxId" style="display:none;">3128455</span><span id="comment-maxDate" style="display:none;">2015/2/12 12:32:04</span>
+					<span>
+						 <span class="comment_date">2015-02-12 12:32</span>
+					</span>
+				<a id="a_comment_author_3128455" href="http://www.cnblogs.com/cppexpert/" target="_blank">C++专家</a> <a href="http://msg.cnblogs.com/msg/send/C%2b%2b%e4%b8%93%e5%ae%b6" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="postText">
+				<div id="comment_body_3128455" class="blog_comment_body">很考验基础的</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3128455,'Digg',this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3128455,'Bury',this)">反对(0)</a></div><span id="comment_3128455_avatar" style="display:none;">http://pic.cnitblog.com/face/722261/20150304223533.png</span>
+			</div>
+            <div class="commentOpt">
+			&nbsp;&nbsp;<span class="comment_actions"></span>
+            </div>
+		</div>
+		<br>
+	
+</div><div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login('commentform');">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="开发者的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="opt_under_post"></div>
+<script type="text/javascript">
+    var enableGoogleAd = canShowAdsense(); var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];
+    fixPostBodyFormat();
+</script>
+<div id="ad_under_post_holder">
+<script type="text/javascript">
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        if (enableGoogleAd) {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        }
+    })();
+</script>
+<script type="text/javascript">
+    try {
+        if (enableGoogleAd) {
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/1090369/cnblogs_blogpost_C1_sitehome', [300, 250], 'div-gpt-ad-1346480159711-0').addService(googletag.pubads());
+                googletag.defineSlot('/1090369/cnblogs_blogpost_C2', [468, 60], 'div-gpt-ad-1410860226396-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        };
+    } catch (e) { }
+</script>
+<div id="google_ad_c1" class="c_ad_block">
+    <div id="div-gpt-ad-1346480159711-0" style="width:300px; height:250px;">
+    <script type="text/javascript">
+        try {
+            if (enableGoogleAd) {
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1346480159711-0'); });            
+            } else {
+                $('#div-gpt-ad-1346480159711-0').hide();
+            }
+    } catch (e) { }
+    </script>
+    <div style="border: 0pt none;" id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0" id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0" frameborder="0" height="250" width="300"></iframe></div><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom; visibility: hidden; display: none;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0__hidden__" id="google_ads_iframe_/1090369/cnblogs_blogpost_C1_sitehome_0__hidden__" frameborder="0" height="0" width="0"></iframe></div>
+</div>
+</div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/516853/" target="_blank">软件测试是失败者的赌注</a><br> ·  <a href="http://news.cnblogs.com/n/516852/" target="_blank">Facebook第一个华人员工已经回国，表示要来拯救阿里的代码</a><br> ·  <a href="http://news.cnblogs.com/n/516851/" target="_blank">请不要让程序员在黑暗中摸索</a><br> ·  <a href="http://news.cnblogs.com/n/516850/" target="_blank">硅谷本土投资圈对Seed-A轮的投资在收缩！</a><br> ·  <a href="http://news.cnblogs.com/n/516849/" target="_blank">创业公司的运营之道：当CEO就是当编辑</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="google_ad_c2" class="c_ad_block">
+<div id="div-gpt-ad-1410860226396-0" style="width:468px; height:60px;">
+<script type="text/javascript">
+try {
+    if (enableGoogleAd) {
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1410860226396-0'); });
+    } else {
+        $('#div-gpt-ad-1346480159711-0').hide();
+    }
+} catch (e) { }
+</script>
+<div style="border: 0pt none;" id="google_ads_iframe_/1090369/cnblogs_blogpost_C2_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" scrolling="no" name="google_ads_iframe_/1090369/cnblogs_blogpost_C2_0" id="google_ads_iframe_/1090369/cnblogs_blogpost_C2_0" frameborder="0" height="60" width="468"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/516732/" target="_blank">解密大型互联网公司产品经理们的成长路径</a><br> ·  <a href="http://kb.cnblogs.com/page/516657/" target="_blank">打造不可动摇的企业级移动化策略所需的七个步骤</a><br> ·  <a href="http://kb.cnblogs.com/page/516180/" target="_blank">帮设计师与工程师更好沟通的实用技巧</a><br> ·  <a href="http://kb.cnblogs.com/page/516256/" target="_blank">图片服务架构演进</a><br> ·  <a href="http://kb.cnblogs.com/page/516179/" target="_blank">软件架构师是一个角色，不是一项工作</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+$(function () {
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 200);
+});
+</script>
+</div>
+
+</div>
+<div class="footer">
+
+<p id="footer">
+	Powered by: 
+	<br>
+	
+	<a id="Footer1_Hyperlink3" name="Hyperlink1" href="http://www.cnblogs.com/" style="font-family:Verdana;font-size:12px;">博客园</a>
+	<br>
+	Copyright © fangyukuan
+</p>
+</div>
+
+
+<script charset="utf-8" async="true" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/gf.js"></script><iframe class="pxjjvwdsaoihvdquqfiz" style="visibility: hidden; display: none;" src="C_C++%20%E7%AC%94%E8%AF%95%E3%80%81%E9%9D%A2%E8%AF%95%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%B1%87%E6%80%BB%20-%20fangyukuan%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD_files/container.htm"></iframe></body></html>

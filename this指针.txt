@@ -1,0 +1,486 @@
+没有类型   不占内存
+
+为了写这篇文章，准备了好长时间，翻遍了箱底的书籍。但是现在还是不敢放开手来写，战战兢兢。不是担心自己写错，而是唯恐自己错误误导别人。同时也希望这篇文章能给你一点收获。既然是深入探讨this指针，所以建议初学者，最好具有一定编译基础，调试基础。如果大家认为这片文章有不满的地方,就给我发信批评一下，以便及时修正。
+ 
+关于this指针的描述我们一般从语言层次上讲；
+ 
+this指针作为一个隐含参数传递给非静态成员函数，用以指向该成员函数所属类所定义的对象。当不同的对象调用同一个类的成员函数代码时，编译器会依据该成员函数的this指针所指向的不同对象来确定应该引用哪个对象的数据成员。简单例子
+ 
+我们定义一个简单stack类
+ 
+// 定义stack类
+ 
+class Stack
+ 
+{
+ 
+public:
+ 
+     Stack();// 构造函数
+ 
+     ~Stack();// 析构函数
+ 
+public:
+ 
+     void push(char c);// 压栈函数
+ 
+private:
+ 
+     char *top;// 栈顶元素
+ 
+     char *max;// 栈容量
+ 
+};
+ 
+ 
+ 
+// 压栈函数
+ 
+void Stack::push(char c)
+ 
+{
+ 
+     if(top > max)
+ 
+     {
+ 
+         ERROR;
+ 
+     }
+ 
+     *top++ = c;
+ 
+}
+ 
+ 
+ 
+// 定义公共函数，操作栈对象中的push函数
+ 
+void FunStack(Stack *p)
+ 
+{
+ 
+     p->push('c');
+ 
+}
+ 
+上面的代码我们加入this概念，以C代码形式显示(你可以理解编译C++成C代码后，Cfront开始就是这么做的)
+ 
+// 用普通C描述类成员函数
+ 
+void Stack__push(this,c);// 普通C代码
+ 
+{
+ 
+     if(this->top > this->max)
+ 
+     {
+ 
+         ERROR;
+ 
+     }
+ 
+     *(this->top)++ = c;
+ 
+}
+ 
+ 
+ 
+void FunStack(p)// Stack *p;
+ 
+{
+ 
+     Stack__push(p,'c');
+ 
+}
+ 
+C++中this指针是从Simula（只是听说没有使用过）里的THIS引用的翻版，有时候有人会问，为什么this是指针而不是一个引用？为什么叫this而不是叫self（smalltalk）？第一个问题是，当this引入带类的C时，在那时的是C＋＋中还没有引用机制，所以只能是this指针而不是引用了。第二个问题，更简单了，就是因为this是从simula来，而不是从smalltalk来。
+ 
+    上面是简单的讨论，我们将逐步深入讨论this。
+ 
+我们通过this访问对象（已经成惯例了）中函数和变量时一般这样使用
+ 
+    this->top;// 访问变量
+ 
+    this->push();// 访问函数
+ 
+ 
+ 
+    (*this).top;// 访问变量
+ 
+    (*this).push();// 访问函数
+ 
+通过上面例子，我们从语言层次上说this是一个指针（也许你说this本来就是一个指针，就叫this指针，不要着急听我慢慢说来）。那么this是一个什么样子的指针，比如我们最常见的指针有。
+ 
+    int *p;
+ 
+    Const int *p;
+ 
+    int * const p;
+ 
+那么this指针是不是其中一种？下面我们分别验证。
+ 
+    我们定义类,作为验证对象
+ 
+    class A
+ 
+{
+ 
+public:
+ 
+     int iData;// 简单期间我们定义为int型
+ 
+     mutable int iData2;// mutable变量
+ 
+int Fun1(){return ++iData;};// 普通函数㈠
+ 
+     int Fun2() const {return ++iData;};// 带const的函数㈡
+ 
+};
+ 
+上面的㈠函数可以正确执行。
+ 
+上面㈡函数，不能通过编译，我们知道在const函数中，不允许修改类中变量。那么最终原因是什么？其实在上面的例子中，我们用C实现
+ 
+int A_Fun2(const A* this);
+ 
+const函数本质是const this的原因，所以不允许修改iData值。
+ 
+至少现在我们可以确定this指针，不是一个const常量指针。因为如果this是常量指针，我们就不能修改类中变量的值了。捎带我们提一下C＋＋中关键字mutable，如上定义的mutable int iData2;// mutable变量，这样我们就可以在const函数中修改iData2的值。其实这时的mutable和public，private，protected是相同的，这些关键字只是在编译时刻有用，编译后变量类型是没有区别的。更深一步说，强制类型转换也是对编译器来说，是通过编译器编译过程中判断类型转换的正误。
+ 
+    那么this对象是否是A *const this的值哪？首先我们先看一个例子
+ 
+ 
+ 
+static int iTest = 1;
+ 
+class A
+ 
+{
+ 
+public:
+ 
+     int iData;// 简单期间我们定义为int型
+ 
+     mutable int iData2;// mutable变量
+ 
+     int Fun1()
+ 
+     {
+ 
+         int iTemp = 4;
+ 
+         return ++iData;
+ 
+     };// 普通函数
+ 
+     int Fun2()const {return iData;};// 带const的函数
+ 
+};
+ 
+ 
+ 
+int _tmain(int argc, _TCHAR* argv[])
+ 
+{
+ 
+     A a;
+ 
+static int iTest1 = 2;
+ 
+     a.Fun1();
+ 
+static int iTest2 = 3;
+ 
+system("pause");
+ 
+     return 0;
+ 
+}
+ 
+我们通过上面的例子查看this的地址，我们定义static对象的目的就是为了用this指针的地址和static变量的地址进行对比，看一看this指针到底分配到哪里？
+ 
+    注意我们在这里不能直接使用&this获得this的指针，如果我们这样定义会提示
+ 
+Error C2102 “&”要求一个L值
+ 
+    通过上面至少我们知道，this不是一个个人定义的变量，只是在运行时刻有效。所以这时如果直接对this取地址，在编译时刻无法通过，提示如上错误。
+ 
+    既然我们在程序中无法通过&this取得this的地址。那么我们有什么办法取得this的地址？我们上面已经提到this是在运行时刻有效，我们就以据这点查找this的地址。
+ 
+    为了在取得this的地址，我们使用VC7.0下的命令窗口，在命令窗口中我们使用命令eval，通过这个命令我们可以取得this的地址。我们还是在上面的程序中设置断点
+ 
+
+
+ 
+ 
+在debug下，我们运行上面的程序，并进入断点后，进行取址操作。
+ 
+>eval &iTest
+ 
+0x0044afa0 iTest
+ 
+>eval &iTest1
+ 
+0x0044afa4 iTest1
+ 
+>eval &this// 注意只有我们进入Fun1（）函数体内才能取得&this的值
+ 
+0x0012fdf0 "玄_"
+ 
+>eval &iTest2
+ 
+0x0044afa8 iTest2
+ 
+ 
+ 
+通过对比我们可以看出static变量iTest,iTest1,iTest2存放在全局变量区域，而&this（0x0012fdf0）的地址比&iTest（0x0044afa0）地址还要底，而static变量存放在单独全局
+ 
+区域，并且这个区域是从底地址到高地址递增的。所以通过上面的对比至少我们可以肯定一点this指针的创建要比static变量（或者全局变量）早。那么更比创建A a；对象时调用A的构造函数早，只是创建a对象后，this指向a对象；
+ 
+当我们创建两个A类对象时，会发现this指针的地址是相同的，但是this指针指向对象不同。当然不同了，如果相同。A a，b；那么a，b对象也就相同了，这种方式肯定是不对的。结论就是同一个类创建多个对象时，多个对象的this指针是同一个指针。也就是说在单进程单线程中this对象在放入CPU寄存器中时都是同一个地址，只是指向不同的对象而已。上面的测试是在DEBUG状态下的测试结果。
+ 
+那么在Release是什么样？要多亏VC7.0支持Release下的断点，我们在Release下，启动调试。这时需要在Release状态下设置，优化状态为禁用(/Od)
+ 
+>eval &this CXX0069: 错误: 变量需要堆栈帧
+ 
+>eval this CXX0069: 错误: 变量需要堆栈帧
+ 
+>eval *this CXX0069: 错误: 变量需要堆栈帧
+ 
+ 
+ 
+    在Release状态下&this，this，*this不存在了，提示是变量需要堆栈帧，说明此时的this指针不存在了。难到this指针只是在debug模式下有，在Release模式下没有？而C＋＋语言特性中并没有说this指针在调试状态下有而在Release模式下没有啊？只是强调this指针作为一种隐含参数传递。也就是在正确（请这样理解）的程序中this应该是不存在的，至少可以肯定的是说在内存中不存在this指针。
+ 
+    我们使用C＋＋的时候知道有一种变量定义方式，也不存放到内存，而是直接放到寄存器中。我想你已经猜到了就是register类型变量，下面我们测试register类型变量是否和this指针是一样的结果。
+ 
+    在程序中定义：register int iRegData;
+ 
+    Debug模式下
+ 
+>eval iRegData
+ 
+5
+ 
+>eval &iRegData
+ 
+0x0012fec4// 注意这个地址，看看是否和>eval &this// 注意只有我们进入Fun1（）函数体内才能取得&this的值0x0012fdf0 "玄_"在地址上很接近啊！一个是0x0012fec4，另一个是0x0012fdf0。
+ 
+    Release模式下
+ 
+>eval iRegData
+ 
+5
+ 
+>eval &iRegData
+ 
+0x0012fee0
+ 
+通过上可以知道在debug和Release模式下iRegData都没有直接放入寄存器，而是在内存中开辟了内存空间，至于如何可以在运行时候看出register变量是放到寄存器，而不是内存中，我还不得而知，所以哪位高人知道，麻烦告诉我一声。看来this指针也不是register类型的，或者我现在的能力还不能确定this是register。后来才知道register对编译器只是一个提示，编译器可以执行也可以不执行，就像inline一样。但是至少我们可以使用__inline宏，可以确保函数被inline，但是register？有没有这种策略，我现在还不得而知。
+ 
+补充：定义变量类型有四中分别是
+ 
+1：Auto:非static，const类型变量，比如局部变量，int i；char c等。都是auto int i；auto char c；
+ 
+2：static：静态变量，static int i，static char c；
+ 
+3：const：常量变量，值不可修改。Const int i，static char c；
+ 
+4：register：内存变量，编译器把此值直接放入寄存器。Register int i；register char c；
+ 
+上面讨论我们都是从类中变量进行讨论的，但是无法确定this到底是什么？那么我们继续从类中的函数开始讨论this。并且我们也将逐渐深入编译状态下。
+ 
+开始的使用已经举了例子，类内函数在解释函数时，把this指针作为函数的第一个参数进行传递。但是，当高级语言被编译成计算机可以识别的机器码时，有一个问题就凸现出来：在CPU中，计算机没有办法知道一个函数调用需要多少个、什么样的参数，也没有硬件可以保存这些参数（你讲看到this是一个例外）。也就是说，计算机不知道怎么给这个函数传递参数，传递参数的工作必须由函数调用者和函数本身来协调。为此，计算机提供了一种被称为栈的数据结构来支持参数传递。
+    栈是一种先进后出的数据结构，栈有一个存储区、一个栈顶指针。栈顶指针指向堆栈中第一个可用的数据项（被称为栈顶）。用户可以在栈顶上方向栈中加入数据，这个操作
+被称为压栈(Push)，压栈以后，栈顶自动变成新加入数据项的位置，栈顶指针也随之修
+改。用户也可以从堆栈中取走栈顶，称为弹出栈(pop)，弹出栈后，栈顶下的一个元素变
+成栈顶，栈顶指针随之修改。
+ 
+函数调用时，调用者依次把参数压栈，然后调用函数，函数被调用以后，在堆栈中取得数据，并进行计算。函数计算结束以后，或者调用者、或者函数本身修改堆栈，使堆栈恢复原装。在参数传递中，有两个很重要的问题必须得到明确说明：当参数个数多于一个时，按照什么顺序把参数压入堆栈函数调用后，由谁来把堆栈恢复原装在高级语言中，通过函数调用约定来说明这两个问题。常见的调用约定有：
+ 
+stdcall
+cdecl
+fastcall
+thiscall
+naked call
+ 
+原来函数调用约定也有这么多啊，看这都有点晕了呵呵。因为这篇文章讲的是this指针，所以在这里我们主要讨论thiscall。
+ 
+       thiscall是唯一一个不能明确指明的函数修饰，因为thiscall不是关键字（所以不要在C＋＋关键字中找了）。它是C++类成员函数缺省的调用约定。由于成员函数调用有一个this指针，因此必须特殊处理，thiscall意味着：参数从右向左入栈，如果参数个数确定，this指针通过ecx传递给被调用者；如果参数个数不确定，this指针在所有参数压栈后被压入堆栈。对参数个数不定的，调用者清理堆栈，否则函数自己清理堆栈为了说明这个调用约定，定义如下类和使用代码：
+
+class A
+{
+public:
+int function1(int a,int b);
+int function2(int a,...);// 定义VA（可变）函数
+};
+int A::function1 (int a,int b)
+{
+return a+b;
+}
+
+int A::function2(int a,...)
+{
+va_list ap;
+va_start(ap,a);
+int i;
+int result = 0;
+for(i = 0 i < a i ++)
+{
+result += va_arg(ap,int);
+}
+return result;
+}
+void callee()
+{
+A a;
+a.function1 (1,2);
+a.function2(3,1,2,3);
+}
+callee函数被翻译成汇编后就变成：
+//函数function1调用
+0401C1D push 2
+00401C1F push 1
+00401C21 lea ecx,[ebp-8]
+00401C24 call function1 // 注意，这里this没有被入栈，而是通过ECX传递this指针
+ 
+此时寄存器的各值如下
+ 
+EAX = 00000003 EBX = 7FFDF000 ECX = 0012EE43
+
+EDX = 00000001 ESI = 00000000 EDI = 0012EE48
+
+EIP = 0041707A ESP = 0012ED70 EBP = 0012EE48
+
+EFL = 00000206
+ 
+察看this指针
+ 
+>eval this
+ 
+0x0012ee43// 看看这个值是否和ECX相同
+//函数function2调用
+00401C29 push 3
+00401C2B push 2
+00401C2D push 1
+00401C2F push 3
+00401C31 lea eax,[ebp-8] // 这里引入this指针，并把this指针放入栈内
+ 
+EAX = 00000006 EBX = 7FFDF000 ECX = 0012ED70
+
+EDX = 00000006 ESI = 00000000 EDI = 0012EE48
+
+EIP = 0041708E ESP = 0012ED70 EBP = 0012EE48
+
+EFL = 00000212
+
+察看this指针
+ 
+>eval this
+ 
+0x0012ee43// 看看这个值是否和ECX相同
+00401C34 push eax
+00401C35 call function2
+00401C3A add esp,14h
+ 
+ 
+ 
+到现在，我们对this得了解还说不上深入了解。简单得说this就是指向对象自身的一个指针，讨论这么多其实就是想了解this在反编译阶段是如何传递运行得。也许就this的了解我们就可以基于以上讨论已经足够了。但是this的应用并不简单的就是这些内容，比如在ATL中，就有专门函数用来保存回复this指针的策略；我们在重载operator=也需要通过this判断赋值等号两边对象，是否指向同一个对象。
+ 
+ 
+ 
+关于指针：指针和其它变量（int，char等）一样，在声明后会在内存中申请内存空间，存储在在程序的堆栈上，大小一般都是一个机器字的长度（比如在32位机上是4个字节）。简单的说指针是指向内存中地址的变量，可以是数据的地址也可以是函数的地址。一句话：指针是一种用于储存“另外一个变量的地址”的变量。或者拆成两句：指针是一个变量，它的值是另外一个变量的地址。
+
+
+
+
+this指针只能在一个类的成员函数中调用，它表示当前对象的地址。下面是一个例子： 
+    void Date::setMonth( int mn ) 
+    { 
+     month = mn; // 这三句是等价的 
+     this->month = mn; 
+     (*this).month = mn; 
+    } 
+
+1. this只能在成员函数中使用。
+全局函数，静态函数都不能使用this。
+实际上，成员函数默认第一个参数为T* const register this。
+如： 
+class A{public: int func(int p){}};
+其中，func的原型在编译器看来应该是： int func(A* const register this, int p); 
+2. 由此可见，this在成员函数的开始前构造的，在成员的结束后清除。
+这个生命周期同任一个函数的参数是一样的，没有任何区别。
+当调用一个类的成员函数时，编译器将类的指针作为函数的this参数传递进去。如：
+A a;
+a.func(10);
+此处，编译器将会编译成： A::func(&a, 10);
+嗯，看起来和静态函数没差别，对吗？不过，区别还是有的。编译器通常会对this指针做一些优化的，因此，this指针的传递效率比较高－－如vc通常是通过ecx寄存器来传递this参数。
+
+3. 回答
+#1:this指针是什么时候创建的?
+this在成员函数的开始执行前构造的，在成员的执行结束后清除。
+#2:this指针存放在何处? 堆,栈,全局变量,还是其他?
+this指针会因编译器不同，而放置的位置不同。可能是栈，也可能是寄存器，甚至全局变量。
+#3:this指针如何传递给类中函数的?绑定?还是在函数参数的首参数就是this指针.那么this指针又是如何找到类实例后函数的?
+this是通过函数参数的首参数来传递的。this指针是在调用之前生成的。类实例后的函数，没有这个说法。类在实例化时，只分配类中的变量空间，并没有为函数分配空间。自从类的函数定义完成后，它就在那儿，不会跑的。
+#4:this指针如何访问类中变量的/?
+如果不是类，而是结构的话，那么，如何通过结构指针来访问结构中的变量呢？如果你明白这一点的话，那就很好理解这个问题了。
+在C++中，类和结构是只有一个区别的：类的成员默认是private，而结构是public。
+this是类的指针，如果换成结构，那this就是结构的指针了。
+
+#5:我们只有获得一个对象后,才能通过对象使用this指针,如果我们知道一个对象this指针的位置可以直接使用吗?
+this指针只有在成员函数中才有定义。因此，你获得一个对象后，也不能通过对象使用this指针。所以，我们也无法知道一个对象的this指针的位置（只有在成员函数里才有this指针的位置）。当然，在成员函数里，你是可以知道this指针的位置的（可以&this获得)，也可以直接使用的。
+#6:每个类编译后,是否创建一个类中函数表保存函数指针,以便用来调用函数?
+普通的类函数（不论是成员函数，还是静态函数），都不会创建一个函数表来保存函数指针的。只有虚函数才会被放到函数表中。
+但是，既使是虚函数，如果编译器能明确知道调用的是哪个函数，编译器就不会通过函数表中的指针来间接调用，而是会直接调用该函数。
+
+# 7:这些编译器如何做到的?8:能否模拟实现?
+知道原理后，这两个问题就很容易理解了。
+其实，模拟实现this的调用，在很多场合下，很多人都做过。
+例如，系统回调函数。系统回调函数有很多，如定时，线程啊什么的。
+
+举一个线程的例子：
+class A{
+int n;
+public:
+static void run(void* pThis){
+A* this_ = (A*)pThis;
+this_->process();
+}
+void process(){}
+};
+
+main(){
+A a;
+_beginthread( A::run, 0, &a );
+}
+
+这里就是定义一个静态函数来模拟成员函数。
+
+也有许多C语言写的程序，模拟了类的实现。如freetype库等等。
+其实，有用过C语言的人，大多都模拟过。只是当时没有明确的概念罢了。
+如：
+typedef struct student{
+int age;
+int no;
+int scores;
+}Student;
+void initStudent(Student* pstudent);
+void addScore(Student* pstudent, int score);
+...
+如果你把 pstudent改成this，那就一样了。
+
+它相当于：
+class Student{
+public:
+int age; int no; int scores;
+void initStudent();
+void addScore(int score);
+}
+
+const常量可以有物理存放的空间，因此是可以取地址的
+
+
+///this指针是在创建对象前创建.
+this指针放在栈上,在编译时刻已经确定.
+并且当一个对象创建后,并且运行整个程序运行期间只有一个this指针.
