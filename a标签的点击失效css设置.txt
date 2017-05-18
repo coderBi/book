@@ -1,0 +1,12 @@
+a[disable]{ opacity:0.5; cursor:default; pointer-events:none}
+
+pointer-events属性值详解
+auto——效果和没有定义pointer-events属性相同，鼠标不会穿透当前层。在SVG中，该值和visiblePainted的效果相同。
+none——元素不再是鼠标事件的目标，鼠标不再监听当前层而去监听下面的层中的元素。但是如果它的子元素设置了pointer-events为其它值，比如auto，鼠标还是会监听这个子元素的。
+其它属性值为SVG专用，这里不再多介绍了。
+简单的说，这是一个特别牛的属性，比如让标签disabled。
+比如某个东西添加了onclick事件，却让onclick失效。
+再比如google地图上面那个navigateBar 为什么bar像是一个flash控件一样那么灵活呢
+Google map中左上角的操作区域占位是挺大的，如红色框区域，然后在这个区域是无法操作地图层的。那么我们就可以给这个div设置 pointer-events:none，然后你就会发现下面的地图就可以拖动和点击了。
+浏览器兼容性
+Firefox 3.6+和chrome 2.0+ 以及safari 4.0+都支持这个CSS3属性，IE6/7/8/9/10都不支持，11又支持，不过很好的一点是在ie中给a加disabled 点击事件自动无效。所以刚刚好。
